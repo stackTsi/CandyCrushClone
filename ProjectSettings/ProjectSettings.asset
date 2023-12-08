@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 584d9befce697734b915ab05aae39e5c
+  productGUID: 155eef8ae10b2a84f8aadc3e10093a15
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -701,11 +701,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: eb11b121-e1ef-4843-b6d6-74e5d9737e81
+  cloudProjectId: b8ff3de8-4d2d-4492-94d2-5fd7947b5190
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: Candy Crush Clone
-  organizationId: dashzero123
+  organizationId: unity_9bbd82e1f80efd16478b
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
