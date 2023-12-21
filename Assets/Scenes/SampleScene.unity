@@ -123,6 +123,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &224000816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224000818}
+  - component: {fileID: 224000817}
+  m_Layer: 0
+  m_Name: Match Finder
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &224000817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224000816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9615c8148c2c74242a180deb932cf639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentMatches: []
+--- !u!4 &224000818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224000816}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,7 +204,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.90188676, g: 0.90188676, b: 0.90188676, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -259,8 +304,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1255862212bacb74e86b133e502e2477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 1
   width: 7
   height: 10
+  offSet: 20
   tilePrefab: {fileID: 3773747996275594209, guid: 9d436d160f3eee0418783182390130c9, type: 3}
   dots:
   - {fileID: 4190430540561532507, guid: 0b85620970eec274ea6e3f942fd648da, type: 3}
@@ -271,9 +318,12 @@ MonoBehaviour:
   - {fileID: 3239910965162071206, guid: 3b593e9fb674c224d8faa2bc33c9240b, type: 3}
   - {fileID: 6102361926382067995, guid: 96f26b9f9e1e4cf43bfc026723694f21, type: 3}
   - {fileID: 7078761571935277022, guid: 09e97d8a8e4915b479e7cd1502bf118c, type: 3}
+  destroyEffect: {fileID: 2622787346127490890, guid: d09af35a1c44e2347b7544c55bd719d2, type: 3}
+  currentDot: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 1796483345}
+  - {fileID: 224000818}
