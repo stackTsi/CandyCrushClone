@@ -212,6 +212,7 @@ public class FindMatches : MonoBehaviour
                 board.currentDot.isMatched = false;
                 //Decide what kind of bomb to make
                 /*
+                /*
                 int typeOfBomb = Random.Range(0, 100);
                 if (typeOfBomb < 50)
                 {
