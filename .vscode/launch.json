@@ -1,8 +1,9 @@
 {
     "version": "0.2.0",
     "configurations": [
+
         {
-            "name": "Attach to Unity",
+            "name": "Attach to Unity and Play",
             "type": "vstuc",
             "request": "attach"
         }
