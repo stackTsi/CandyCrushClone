@@ -196,11 +196,16 @@ public class Dot : MonoBehaviour
         otherDot = board.allDots[column + direction.x, row + direction.y];
         previousRow = row;
         previousColumn = column;
-        otherDot.GetComponent<Dot>().column += -1 * direction.x;
-        otherDot.GetComponent<Dot>().row += -1 * direction.y;
-        column += direction.x;
-        row +=  direction.y;
-        StartCoroutine(CheckMoveCo());
+        if (otherDot != null)
+        {
+            otherDot.GetComponent<Dot>().column += -1 * direction.x;
+            otherDot.GetComponent<Dot>().row += -1 * direction.y;
+            column += direction.x;
+            row += direction.y;
+            StartCoroutine(CheckMoveCo());
+        } else {
+            board.currentState = GameState.move;
+        }
     }
     void MovePieces()
     {
@@ -212,7 +217,7 @@ public class Dot : MonoBehaviour
             // previousColumn = column;
             // otherDot.GetComponent<Dot>().column -= 1;
             // column += 1;
-            
+
             MovePiecesEngine(Vector2Int.right);
         }
         else if (swipeAngle > 45 && swipeAngle <= 135 && row < board.height - 1)
@@ -233,7 +238,7 @@ public class Dot : MonoBehaviour
             // previousColumn = column;
             // otherDot.GetComponent<Dot>().column += 1;
             // column -= 1;
-             MovePiecesEngine(Vector2Int.left);
+            MovePiecesEngine(Vector2Int.left);
         }
         else if (swipeAngle < -45 && swipeAngle >= -135 && row > 0)
         {
@@ -243,7 +248,7 @@ public class Dot : MonoBehaviour
             // previousColumn = column;
             // otherDot.GetComponent<Dot>().row += 1;
             // row -= 1;
-             MovePiecesEngine(Vector2Int.down);
+            MovePiecesEngine(Vector2Int.down);
         }
 
         board.currentState = GameState.move;

@@ -5,19 +5,38 @@ using UnityEngine;
 public class Backgroundtile : MonoBehaviour
 {
 
-    // Start is called before the first frame update
-    void Start()
+    public int hitPoints;
+    private SpriteRenderer spriteRenderer;
+    public Sprite breakSprite;
+
+    private void Start()
     {
-        Initialize();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-
+        if (hitPoints <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
-    void Initialize()
+    public void TakeDamage(int damage)
     {
-
+        hitPoints -= damage;
+        if (hitPoints == 1)
+        {
+            MakeBreakSprite();
+        } else {
+            MakeBreakColor();
+        }
+    }
+    void MakeBreakColor(){
+        Color color = spriteRenderer.color;
+        float newAlpha = color.a * .2f;
+        spriteRenderer.color = new Color(color.r, color.g, color.b,newAlpha);
+    }
+    void MakeBreakSprite()
+    {
+        spriteRenderer.sprite = breakSprite;
     }
 }
