@@ -168,8 +168,27 @@ public class FindMatches : MonoBehaviour
                 {
                     if (board.allDots[i, ii] != null)
                     {
-                        dots.Add(board.allDots[i, ii]);
-                        board.allDots[i, ii].GetComponent<Dot>().isMatched = true;
+                        Dot dot = board.allDots[i, ii].GetComponent<Dot>();
+                        //check for other type of bomb for bomb chaining
+                        if (dot.isColumnBomb)
+                        {
+                            dot.isColumnBomb = false;
+                            dots.Union(GetColumnPieces(i)).ToList();
+                        }
+                        else if (dot.isRowBomb)
+                        {
+                            dot.isRowBomb = false;
+                            dots.Union(GetRowPieces(ii)).ToList();
+                        }
+                        else if (dot.isAdjacentBomb)
+                        {
+                            dot.isAdjacentBomb = false;
+                            dots.Union(GetAdjacentPieces(i, ii)).ToList();
+                        }
+                        {
+                            dots.Add(board.allDots[i, ii]);
+                            dot.isMatched = true;
+                        }
                     }
 
                 }
@@ -184,8 +203,27 @@ public class FindMatches : MonoBehaviour
         {
             if (board.allDots[column, i] != null)
             {
-                dots.Add(board.allDots[column, i]);
-                board.allDots[column, i].GetComponent<Dot>().isMatched = true;
+                //check for other type of bomb for bomb chaining
+                Dot dot = board.allDots[column, i].GetComponent<Dot>();
+                if (dot != null)
+                {
+                    if (dot.isRowBomb)
+                    {
+                        dot.isRowBomb = false;
+                        dots.Union(GetRowPieces(i)).ToList();
+                    }
+                    else if (dot.isAdjacentBomb)
+                    {
+                        dot.isAdjacentBomb = false;
+                        dots.Union(GetAdjacentPieces(column, i)).ToList();
+                    }
+                    else
+                    {
+                        dots.Add(board.allDots[column, i]);
+                        dot.isMatched = true;
+                    }
+                }
+
             }
         }
         return dots;
@@ -197,8 +235,26 @@ public class FindMatches : MonoBehaviour
         {
             if (board.allDots[i, row] != null)
             {
-                dots.Add(board.allDots[i, row]);
-                board.allDots[i, row].GetComponent<Dot>().isMatched = true;
+                Dot dot = board.allDots[i, row].GetComponent<Dot>();
+                if (dot != null)
+                {
+                    //check for other type of bomb for bomb chaining
+                    if (dot.isColumnBomb)
+                    {
+                        dot.isColumnBomb = false;
+                        dots.Union(GetColumnPieces(i)).ToList();
+                    }
+                    else if (dot.isAdjacentBomb)
+                    {
+                        dot.isAdjacentBomb = false;
+                        dots.Union(GetAdjacentPieces(i, row)).ToList();
+                    }
+                    else
+                    {
+                        dots.Add(board.allDots[i, row]);
+                        dot.isMatched = true;
+                    }
+                }
             }
         }
         return dots;

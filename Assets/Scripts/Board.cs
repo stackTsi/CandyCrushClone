@@ -38,9 +38,14 @@ public class Board : MonoBehaviour
     public GameObject[,] allDots;
     public Dot currentDot;
     private FindMatches findMatches;
+    private ScoreManager scoreManager;
+    public int basePieceVal = 10;
+    private int streakValue = 1;
+    public float refillDelay = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
+        scoreManager = FindObjectOfType<ScoreManager>();
         breakableTiles = new Backgroundtile[width, height];
         findMatches = FindObjectOfType<FindMatches>();
         blankSpaces = new bool[width, height];
@@ -86,7 +91,9 @@ public class Board : MonoBehaviour
                 if (!blankSpaces[i, j])
                 {
                     Vector2 tempPosition = new Vector2(i, j + offSet);
-                    GameObject backgroundtile = Instantiate(tilePrefab, tempPosition, Quaternion.identity) as GameObject;
+                    Vector2 tilePosition = new Vector2(i, j);
+
+                    GameObject backgroundtile = Instantiate(tilePrefab, tilePosition, Quaternion.identity) as GameObject;
                     backgroundtile.transform.parent = this.transform;
                     backgroundtile.name = "(" + i + "," + j + ")";
                     int dotToUse = UnityEngine.Random.Range(0, dots.Length);
@@ -271,6 +278,7 @@ public class Board : MonoBehaviour
             GameObject particle = Instantiate(destroyEffect, allDots[column, row].transform.position, Quaternion.identity);
             Destroy(particle, .5f);
             Destroy(allDots[column, row]);
+            scoreManager.IncreaseScore(basePieceVal * streakValue);
             allDots[column, row] = null;
         }
     }
@@ -315,7 +323,7 @@ public class Board : MonoBehaviour
                 }
             }
         }
-        yield return new WaitForSeconds(.4f);
+        yield return new WaitForSeconds(refillDelay * 0.5f);
         StartCoroutine(FillBoardCo());
     }
     // private IEnumerator DecreaseRowCo()
@@ -337,7 +345,7 @@ public class Board : MonoBehaviour
     //         }
     //         nullCount = 0;
     //     }
-    //     yield return new WaitForSeconds(.4f);
+    //     yield return new WaitForSeconds(refillDelay * 0.5f);
     //     StartCoroutine(FillBoardCo());
     // }
 
@@ -351,6 +359,13 @@ public class Board : MonoBehaviour
                 {
                     Vector2 tempPosition = new Vector2(i, j + offSet);
                     int dotToUse = UnityEngine.Random.Range(0, dots.Length);
+                    int maxIterations = 0;
+                    while (MatchesAt(i, j, dots[dotToUse]) && maxIterations < 100)
+                    {
+                        maxIterations++;
+                        dotToUse = UnityEngine.Random.Range(0, dots.Length);
+                    }
+                    maxIterations = 0;
                     GameObject piece = Instantiate(dots[dotToUse], tempPosition, Quaternion.identity);
                     allDots[i, j] = piece;
                     piece.GetComponent<Dot>().row = j;
@@ -382,29 +397,31 @@ public class Board : MonoBehaviour
     {
         currentState = GameState.wait;
         RefillBoard();
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(refillDelay);
 
         while (MatchesOnBoard())
         {
-            yield return new WaitForSeconds(.5f);
+            streakValue++;
             DestroyMatches();
+            yield return new WaitForSeconds(2 * refillDelay);
         }
         findMatches.currentMatches.Clear();
         currentDot = null;
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds(.6f * refillDelay);
         if (IsDeadlocked())
         {
             StartCoroutine(ShuffleBoard());
             Debug.Log("Deadlocked detected!");
         }
         currentState = GameState.move;
+        streakValue = 1;
     }
 
     //Deadlock checker
     private void SwitchPieces(int column, int row, Vector2Int direction)
     {
         //Take the first piece and save it in a holder
-        GameObject holder = allDots[column + direction.x, row + direction.y] as GameObject;
+        GameObject holder = allDots[column + direction.x, row + direction.y];
         //switching the first dot to be the second position
         allDots[column + direction.x, row + direction.y] = allDots[column, row];
         //Set the first dot to be the second dot
@@ -417,7 +434,7 @@ public class Board : MonoBehaviour
         {
             for (int ii = 0; ii < height; ii++)
             {
-                if (allDots[i, ii] != null&& !blankSpaces[i,ii])
+                if (allDots[i, ii] != null && !blankSpaces[i, ii])
                 {   //make sure the one and two to the right is in the board
                     if (i < width - 2)
                     {
@@ -449,7 +466,7 @@ public class Board : MonoBehaviour
         return false;
     }
     //Deadlock checker
-    private bool SwitchAndCheck(int column, int row, Vector2Int direction)
+    public bool SwitchAndCheck(int column, int row, Vector2Int direction)
     {
         SwitchPieces(column, row, direction);
         if (CheckForMatches())
@@ -470,6 +487,7 @@ public class Board : MonoBehaviour
             {
                 if (allDots[i, ii] != null)
                 {
+                    // row check
                     if (i < width - 1)
                     {
                         if (SwitchAndCheck(i, ii, Vector2Int.right))
@@ -477,6 +495,7 @@ public class Board : MonoBehaviour
                             return false;
                         }
                     }
+                    // column check
                     if (ii < height - 1)
                     {
                         if (SwitchAndCheck(i, ii, Vector2Int.up))
@@ -491,7 +510,7 @@ public class Board : MonoBehaviour
     }
 
     private IEnumerator ShuffleBoard()
-    {   
+    {
         yield return new WaitForSeconds(.5f);
         //Create a list of game objects
         List<GameObject> newBoard = new List<GameObject>();
@@ -522,7 +541,7 @@ public class Board : MonoBehaviour
                     int maxIterations = 0;
                     while (MatchesAt(i, ii, newBoard[pieceToUse]) && maxIterations < 100)
                     {
-                        pieceToUse = UnityEngine.Random.Range(0, newBoard.Count-1);
+                        pieceToUse = UnityEngine.Random.Range(0, newBoard.Count - 1);
                         maxIterations++;
                     }
                     //make a container for the piece

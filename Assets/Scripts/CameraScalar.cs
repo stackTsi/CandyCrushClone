@@ -8,6 +8,7 @@ public class CameraScalar : MonoBehaviour
     private Board board;
     public float cameraOffset;
     public float padding = 2;
+    public float yOffset = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class CameraScalar : MonoBehaviour
     // dynamic camera scaling by board's width and height
     void RepositionCamera(float x, float y)
     {
-        Vector3 tempPosition = new(x / 2, y / 2, cameraOffset);
+        Vector3 tempPosition = new(x / 2, y / 2 + yOffset, cameraOffset);
         transform.position = tempPosition;
 
         if (board.width >= board.height)

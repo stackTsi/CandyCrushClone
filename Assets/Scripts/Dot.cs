@@ -18,7 +18,7 @@ public class Dot : MonoBehaviour
     public int targetY;
     public bool isMatched = false;
 
-
+    private HintManager hintManager;
     private FindMatches findMatches;
     private Board board;
     public GameObject otherDot;
@@ -47,6 +47,7 @@ public class Dot : MonoBehaviour
         isColorBomb = false;
         isAdjacentBomb = false;
 
+        hintManager =FindObjectOfType<HintManager>();
         board = FindObjectOfType<Board>();
         findMatches = FindObjectOfType<FindMatches>();
         // targetX = (int)transform.position.x;
@@ -68,8 +69,8 @@ public class Dot : MonoBehaviour
         }
         else if (Input.GetMouseButtonDown(2))
         {
-            isRowBomb = true;
-            GameObject arrow = Instantiate(rowArrow, transform.position, Quaternion.identity);
+            isColumnBomb = true;
+            GameObject arrow = Instantiate(columnArrow, transform.position, Quaternion.identity);
             arrow.transform.parent = this.transform;
         }
     }
@@ -147,7 +148,7 @@ public class Dot : MonoBehaviour
                 otherDot.GetComponent<Dot>().column = column;
                 row = previousRow;
                 column = previousColumn;
-                yield return new WaitForSeconds(.2f);
+                yield return new WaitForSeconds(.3f);
                 board.currentDot = null;
                 board.currentState = GameState.move;
             }
@@ -161,6 +162,10 @@ public class Dot : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        //Destroy hint
+        if(hintManager != null){
+            hintManager.DestroyHint();
+        }
         if (board.currentState == GameState.move)
         {
             firstTouchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -306,6 +311,7 @@ public class Dot : MonoBehaviour
         isColorBomb = true;
         GameObject color = Instantiate(colorBomb, transform.position, Quaternion.identity);
         color.transform.parent = this.transform;
+        this.gameObject.tag = "Color";
     }
 
     public void MakeAdjacentBomb()
