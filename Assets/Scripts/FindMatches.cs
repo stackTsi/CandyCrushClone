@@ -22,15 +22,15 @@ public class FindMatches : MonoBehaviour
         List<GameObject> currentDots = new List<GameObject>();
         if (dot1.isAdjacentBomb)
         {
-            currentMatches.Union(GetAdjacentPieces(dot1.column,dot1.row));
+            currentMatches.Union(GetAdjacentPieces(dot1.column, dot1.row));
         }
         if (dot2.isAdjacentBomb)
         {
-            currentMatches.Union(GetAdjacentPieces(dot2.column,dot2.row));
+            currentMatches.Union(GetAdjacentPieces(dot2.column, dot2.row));
         }
         if (dot3.isAdjacentBomb)
         {
-            currentMatches.Union(GetAdjacentPieces(dot3.column,dot3.row));
+            currentMatches.Union(GetAdjacentPieces(dot3.column, dot3.row));
         }
         return currentDots;
     }
@@ -166,8 +166,12 @@ public class FindMatches : MonoBehaviour
                 //Check if piece is inside the board
                 if (i >= 0 && i < board.width && ii >= 0 && ii < board.height)
                 {
-                    dots.Add(board.allDots[i, ii]);
-                    board.allDots[i, ii].GetComponent<Dot>().isMatched = true;
+                    if (board.allDots[i, ii] != null)
+                    {
+                        dots.Add(board.allDots[i, ii]);
+                        board.allDots[i, ii].GetComponent<Dot>().isMatched = true;
+                    }
+
                 }
             }
         }

@@ -26,8 +26,7 @@ public class CameraScalar : MonoBehaviour
 
         if (board.width >= board.height)
         {
-            Camera.main.orthographicSize = (board.width / 2 + padding) / Camera.main.aspect;
-            //Debug.Log(Camera.main.aspect);
+            Camera.main.orthographicSize = board.width / 2 + padding;
         }
         else
         {

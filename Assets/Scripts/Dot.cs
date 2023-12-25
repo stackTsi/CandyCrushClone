@@ -147,7 +147,7 @@ public class Dot : MonoBehaviour
                 otherDot.GetComponent<Dot>().column = column;
                 row = previousRow;
                 column = previousColumn;
-                yield return new WaitForSeconds(.5f);
+                yield return new WaitForSeconds(.2f);
                 board.currentDot = null;
                 board.currentState = GameState.move;
             }
@@ -203,12 +203,15 @@ public class Dot : MonoBehaviour
             column += direction.x;
             row += direction.y;
             StartCoroutine(CheckMoveCo());
-        } else {
+        }
+        else
+        {
             board.currentState = GameState.move;
         }
     }
     void MovePieces()
     {
+        board.currentState = GameState.wait;
         if (swipeAngle > -45 && swipeAngle <= 45 && column < board.width - 1)
         {
             //Right swipe
@@ -250,8 +253,6 @@ public class Dot : MonoBehaviour
             // row -= 1;
             MovePiecesEngine(Vector2Int.down);
         }
-
-        board.currentState = GameState.move;
     }
 
     void FindMatches()
