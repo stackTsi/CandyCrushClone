@@ -1,10 +1,15 @@
 @startuml
 class SoundManager {
+    + destroyNoise : AudioSource[]
+    + backgroundMusic : AudioSource
+    + introSection : AudioSource
+    - introPlayed : bool = false
     + Start() : void
     + Update() : void
+    - PlayBackground() : void
+    - CheckPlayIntroToPlayBG() : void
+    - PlayIntro() : void
     + PlayRandomDestroyNoise() : void
 }
 MonoBehaviour <|-- SoundManager
-SoundManager --> "backgroundMusic" AudioSource
-SoundManager --> "introSection" AudioSource
 @enduml

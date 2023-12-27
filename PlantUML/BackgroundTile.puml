@@ -1,8 +1,13 @@
 @startuml
 class Backgroundtile {
     + hitPoints : int
+    - spriteRenderer : SpriteRenderer
+    + breakSprite : Sprite
+    - Start() : void
+    - Update() : void
     + TakeDamage(damage:int) : void
+    - MakeBreakColor() : void
+    - MakeBreakSprite() : void
 }
 MonoBehaviour <|-- Backgroundtile
-Backgroundtile --> "breakSprite" Sprite
 @enduml

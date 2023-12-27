@@ -2,75 +2,15 @@
 left to right direction
 class Backgroundtile {
     + hitPoints : int
+    - spriteRenderer : SpriteRenderer
+    + breakSprite : Sprite
+    - Start() : void
+    - Update() : void
     + TakeDamage(damage:int) : void
+    - MakeBreakColor() : void
+    - MakeBreakSprite() : void
 }
 MonoBehaviour <|-- Backgroundtile
-Backgroundtile --> "breakSprite" Sprite
-class CameraScalar {
-    + cameraOffset : float
-    + padding : float = 2
-    + yOffset : float = 1
-}
-MonoBehaviour <|-- CameraScalar
-class FadePanelController {
-    + OK() : void
-}
-MonoBehaviour <|-- FadePanelController
-FadePanelController --> "panelAnim" Animator
-FadePanelController --> "gameInfoAnim" Animator
-class FindMatches {
-    + FindAllMatches() : void
-    + MatchPiecesOfColor(color:string) : void
-    + CheckBombs() : void
-}
-class "List`1"<T> {
-}
-MonoBehaviour <|-- FindMatches
-FindMatches o-> "currentMatches<GameObject>" "List`1"
-class BlankGoal {
-    + numberNeeded : int
-    + numberCollected : int
-    + matchValue : string
-}
-class GoalManager {
-}
-BlankGoal --> "goalSprite" Sprite
-MonoBehaviour <|-- GoalManager
-GoalManager --> "goalPrefab" GameObject
-GoalManager --> "goalIntroParent" GameObject
-GoalManager --> "goalGameParent" GameObject
-class GoalPanel {
-    + thisString : string
-}
-MonoBehaviour <|-- GoalPanel
-GoalPanel --> "thisImage" Image
-GoalPanel --> "thisSprite" Sprite
-GoalPanel --> "thisText" TextMeshProUGUI
-class HintManager {
-    + hintDelay : float
-    + DestroyHint() : void
-}
-MonoBehaviour <|-- HintManager
-HintManager --> "hintParticle" GameObject
-HintManager --> "currentHint" GameObject
-class ScoreManager {
-    + score : int
-    + IncreaseScore(amountToIncrease:int) : void
-}
-MonoBehaviour <|-- ScoreManager
-ScoreManager --> "scoreText" TextMeshProUGUI
-ScoreManager --> "scoreBar" Image
-class SoundManager {
-    + Start() : void
-    + Update() : void
-    + PlayRandomDestroyNoise() : void
-}
-MonoBehaviour <|-- SoundManager
-SoundManager --> "backgroundMusic" AudioSource
-SoundManager --> "introSection" AudioSource
-
-newpage
-top to bottom direction
 enum GameState {
     wait,
     move,
@@ -83,25 +23,62 @@ enum TileKind {
 class TileType {
     + x : int
     + y : int
+    + tileKind : TileKind
 }
 class Board {
+    + currentState : GameState
     + width : int
     + height : int
     + offSet : int
+    + tilePrefab : GameObject
+    + breakableTilePrefab : GameObject
+    + dots : GameObject[]
+    + destroyEffect : GameObject
+    + boardLayout : TileType[]
+    - blankSpaces : bool[,]
+    - breakableTiles : Backgroundtile[,]
+    + allDots : GameObject[,]
+    + currentDot : Dot
+    - findMatches : FindMatches
+    - scoreManager : ScoreManager
+    - soundManager : SoundManager
     + basePieceVal : int = 10
+    - streakValue : int = 1
     + refillDelay : float = 0.5f
+    + scoreGoals : int[]
+    - Start() : void
     + GenerateBlankSpaces() : void
     + GenerateBreakableTiles() : void
+    - SetUp() : void
+    - MatchesAt(column:int, row:int, piece:GameObject) : bool
+    - ColumnOrRow() : bool
+    - CheckToMakeBombs() : void
+    - DestroyMatchesAt(column:int, row:int) : void
     + DestroyMatches() : void
+    - DecreaseRowCo2() : IEnumerator
+    - RefillBoard() : void
+    - MatchesOnBoard() : bool
+    - FillBoardCo() : IEnumerator
+    - SwitchPieces(column:int, row:int, direction:Vector2Int) : void
+    - CheckForMatches() : bool
     + SwitchAndCheck(column:int, row:int, direction:Vector2Int) : bool
+    - IsDeadlocked() : bool
+    - ShuffleBoard() : IEnumerator
 }
-TileType --> "tileKind" TileKind
 MonoBehaviour <|-- Board
-Board o-> "currentState" GameState
-Board --> "tilePrefab" GameObject
-Board --> "breakableTilePrefab" GameObject
-Board --> "destroyEffect" GameObject
-Board --> "currentDot" Dot
+
+newpage
+left to right direction
+class CameraScalar {
+    - board : Board
+    + cameraOffset : float
+    + padding : float = 2
+    + yOffset : float = 1
+    - Start() : void
+    - RepositionCamera(x:float, y:float) : void
+    - Update() : void
+}
+MonoBehaviour <|-- CameraScalar
 class Dot {
     + column : int
     + row : int
@@ -110,22 +87,127 @@ class Dot {
     + targetX : int
     + targetY : int
     + isMatched : bool = false
+    - hintManager : HintManager
+    - findMatches : FindMatches
+    - board : Board
+    + otherDot : GameObject
+    - firstTouchPosition : Vector2
+    - finalTouchPosition : Vector2
+    - tempPosition : Vector2
     + swipeAngle : float = 0
     + swipeResist : float = 1f
     + isColorBomb : bool
     + isColumnBomb : bool
     + isRowBomb : bool
     + isAdjacentBomb : bool
+    + adjacentMarker : GameObject
+    + rowArrow : GameObject
+    + columnArrow : GameObject
+    + colorBomb : GameObject
+    - Start() : void
+    - OnMouseOver() : void
+    - Update() : void
     + CheckMoveCo() : IEnumerator
+    - OnMouseDown() : void
+    - OnMouseUp() : void
+    - CalculateAngle() : void
+    - MovePiecesEngine(direction:Vector2Int) : void
+    - MovePieces() : void
     + MakeRowBomb() : void
     + MakeColumnBomb() : void
     + MakeColorBomb() : void
     + MakeAdjacentBomb() : void
 }
 MonoBehaviour <|-- Dot
-Dot --> "otherDot" GameObject
-Dot --> "adjacentMarker" GameObject
-Dot --> "rowArrow" GameObject
-Dot --> "columnArrow" GameObject
-Dot --> "colorBomb" GameObject
+class FadePanelController {
+    + panelAnim : Animator
+    + gameInfoAnim : Animator
+    + OK() : void
+}
+MonoBehaviour <|-- FadePanelController
+class FindMatches {
+    - board : Board
+    + currentMatches : List<GameObject>
+    - Start() : void
+    + FindAllMatches() : void
+    - IsAdjacentBomb(dot1:Dot, dot2:Dot, dot3:Dot) : List<GameObject>
+    - IsRowBomb(dot1:Dot, dot2:Dot, dot3:Dot) : List<GameObject>
+    - IsColumnBomb(dot1:Dot, dot2:Dot, dot3:Dot) : List<GameObject>
+    - AddToListAndMatch(dot:GameObject) : void
+    - GetNearbyPieces(dot1:GameObject, dot2:GameObject, dot3:GameObject) : void
+    - FindAllMatchesCo() : IEnumerator
+    + MatchPiecesOfColor(color:string) : void
+    - GetAdjacentPieces(column:int, row:int) : List<GameObject>
+    - GetColumnPieces(column:int) : List<GameObject>
+    - GetRowPieces(row:int) : List<GameObject>
+    + CheckBombs() : void
+}
+MonoBehaviour <|-- FindMatches
+class BlankGoal {
+    + numberNeeded : int
+    + numberCollected : int
+    + goalSprite : Sprite
+    + matchValue : string
+}
+
+newpage
+left to right direction
+class GoalManager {
+    + levelGoals : BlankGoal[]
+    + goalPrefab : GameObject
+    + goalIntroParent : GameObject
+    + goalGameParent : GameObject
+    - Start() : void
+    - SetupIntroGoals() : void
+    - Update() : void
+}
+MonoBehaviour <|-- GoalManager
+class GoalPanel {
+    + thisImage : Image
+    + thisSprite : Sprite
+    + thisText : TextMeshProUGUI
+    + thisString : string
+    - Start() : void
+    - Setup() : void
+    - Update() : void
+}
+MonoBehaviour <|-- GoalPanel
+class HintManager {
+    - board : Board
+    + hintDelay : float
+    - hintDelaySeconds : float
+    + hintParticle : GameObject
+    + currentHint : GameObject
+    - Start() : void
+    - Update() : void
+    - FindAllMatches() : List<GameObject>
+    - RandomPickOne() : GameObject
+    - MarkHint() : void
+    + DestroyHint() : void
+}
+MonoBehaviour <|-- HintManager
+class ScoreManager {
+    - board : Board
+    + scoreText : TextMeshProUGUI
+    + score : int
+    + scoreBar : Image
+    - Start() : void
+    - Update() : void
+    + IncreaseScore(amountToIncrease:int) : void
+    - LoadBar() : void
+}
+MonoBehaviour <|-- ScoreManager
+class SoundManager {
+    + destroyNoise : AudioSource[]
+    + backgroundMusic : AudioSource
+    + introSection : AudioSource
+    - introPlayed : bool = false
+    + Start() : void
+    + Update() : void
+    - PlayBackground() : void
+    - CheckPlayIntroToPlayBG() : void
+    - PlayIntro() : void
+    + PlayRandomDestroyNoise() : void
+}
+MonoBehaviour <|-- SoundManager
 @enduml

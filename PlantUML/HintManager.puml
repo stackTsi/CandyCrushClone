@@ -1,9 +1,16 @@
 @startuml
 class HintManager {
+    - board : Board
     + hintDelay : float
+    - hintDelaySeconds : float
+    + hintParticle : GameObject
+    + currentHint : GameObject
+    - Start() : void
+    - Update() : void
+    - FindAllMatches() : List<GameObject>
+    - RandomPickOne() : GameObject
+    - MarkHint() : void
     + DestroyHint() : void
 }
 MonoBehaviour <|-- HintManager
-HintManager --> "hintParticle" GameObject
-HintManager --> "currentHint" GameObject
 @enduml

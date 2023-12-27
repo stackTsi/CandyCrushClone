@@ -1,97 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="998px" preserveAspectRatio="none" style="width:888px;height:998px;background:#FFFFFF;" version="1.1" viewBox="0 0 888 998" width="888px" zoomAndPan="magnify"><defs/><g><!--MD5=[48e88c162c5505361c629eb6ff3812a8]
-class GameState--><g id="elem_GameState"><rect codeLine="73" fill="#F1F1F1" height="86.1358" id="GameState" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="105" x="520.5" y="219.94"/><ellipse cx="535.5" cy="235.94" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M531.8594,242.44 L531.8594,230.2994 L539.5156,230.2994 L539.5156,232.4244 L534.2344,232.4244 L534.2344,235.0806 L539.25,235.0806 L539.25,237.2056 L534.2344,237.2056 L534.2344,240.315 L539.5156,240.315 L539.5156,242.44 L531.8594,242.44 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="549.5" y="241.372">GameState</text><line style="stroke:#181818;stroke-width:0.5;" x1="521.5" x2="624.5" y1="251.94" y2="251.94"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="526.5" y="270.9059">wait,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="526.5" y="289.9739">move,</text><line style="stroke:#181818;stroke-width:0.5;" x1="521.5" x2="624.5" y1="298.0758" y2="298.0758"/></g><!--MD5=[b4ae9d073589224ef254da2d940e9e84]
-class TileKind--><g id="elem_TileKind"><rect codeLine="77" fill="#F1F1F1" height="105.2038" id="TileKind" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="87" x="793.5" y="210.44"/><ellipse cx="808.5" cy="226.44" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M804.8594,232.94 L804.8594,220.7994 L812.5156,220.7994 L812.5156,222.9244 L807.2344,222.9244 L807.2344,225.5806 L812.25,225.5806 L812.25,227.7056 L807.2344,227.7056 L807.2344,230.815 L812.5156,230.815 L812.5156,232.94 L804.8594,232.94 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="822.5" y="231.872">TileKind</text><line style="stroke:#181818;stroke-width:0.5;" x1="794.5" x2="879.5" y1="242.44" y2="242.44"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="799.5" y="261.4059">Breakable,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41" x="799.5" y="280.4739">Blank,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="799.5" y="299.5418">Normal,</text><line style="stroke:#181818;stroke-width:0.5;" x1="794.5" x2="879.5" y1="307.6438" y2="307.6438"/></g><!--MD5=[67dc9d447ac5dbb625e3d503755a5c3a]
-class TileType--><g id="elem_TileType"><rect codeLine="82" fill="#F1F1F1" height="86.1358" id="TileType" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="88" x="793" y="7"/><ellipse cx="808" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M807.4688,29.9219 Q805.7188,29.9219 804.5781,29.1875 Q803.4531,28.4375 802.8906,27.0938 Q802.3438,25.7344 802.3438,23.9375 Q802.3438,21.9063 803,20.4531 Q803.6563,19 804.9375,18.2188 Q806.2188,17.4375 808.0938,17.4375 Q808.9844,17.4375 809.6563,17.625 Q810.3281,17.7969 811.0156,18.1406 L810.2031,20.1563 Q809.5781,19.8438 809.0313,19.7188 Q808.5,19.5938 808.0156,19.5938 Q806.8438,19.5938 806.1406,20.125 Q805.4375,20.6563 805.1406,21.6094 Q804.8438,22.5625 804.8438,23.8281 Q804.8438,25.8438 805.5625,26.8125 Q806.2813,27.7656 807.875,27.7656 Q808.4688,27.7656 809.0938,27.6094 Q809.7188,27.4531 810.5469,27.0781 L810.5469,29.2969 Q809.8125,29.6094 809.0156,29.7656 Q808.2344,29.9219 807.4688,29.9219 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="822" y="28.432">TileType</text><line style="stroke:#181818;stroke-width:0.5;" x1="794" x2="880" y1="39" y2="39"/><ellipse cx="804" cy="54.034" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="813" y="57.9659">x : int</text><ellipse cx="804" cy="73.1019" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="813" y="77.0339">y : int</text><line style="stroke:#181818;stroke-width:0.5;" x1="794" x2="880" y1="85.1358" y2="85.1358"/></g><!--MD5=[9563755d011c5cec7ec66dc53565a59e]
-class Board--><g id="elem_Board"><rect codeLine="86" fill="#F1F1F1" height="219.6113" id="Board" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="454" x="7" y="153.14"/><ellipse cx="209.75" cy="169.14" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M209.2188,176.0619 Q207.4688,176.0619 206.3281,175.3275 Q205.2031,174.5775 204.6406,173.2338 Q204.0938,171.8744 204.0938,170.0775 Q204.0938,168.0463 204.75,166.5931 Q205.4063,165.14 206.6875,164.3588 Q207.9688,163.5775 209.8438,163.5775 Q210.7344,163.5775 211.4063,163.765 Q212.0781,163.9369 212.7656,164.2806 L211.9531,166.2963 Q211.3281,165.9838 210.7813,165.8588 Q210.25,165.7338 209.7656,165.7338 Q208.5938,165.7338 207.8906,166.265 Q207.1875,166.7963 206.8906,167.7494 Q206.5938,168.7025 206.5938,169.9681 Q206.5938,171.9838 207.3125,172.9525 Q208.0313,173.9056 209.625,173.9056 Q210.2188,173.9056 210.8438,173.7494 Q211.4688,173.5931 212.2969,173.2181 L212.2969,175.4369 Q211.5625,175.7494 210.7656,175.9056 Q209.9844,176.0619 209.2188,176.0619 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="230.25" y="174.572">Board</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="460" y1="185.14" y2="185.14"/><ellipse cx="18" cy="200.174" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="27" y="204.1059">width : int</text><ellipse cx="18" cy="219.2419" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="27" y="223.1739">height : int</text><ellipse cx="18" cy="238.3098" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="27" y="242.2418">offSet : int</text><ellipse cx="18" cy="257.3777" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="27" y="261.3097">basePieceVal : int = 10</text><ellipse cx="18" cy="276.4456" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="27" y="280.3776">refillDelay : float = 0.5f</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="460" y1="288.4796" y2="288.4796"/><ellipse cx="18" cy="303.5135" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="194" x="27" y="307.4455">GenerateBlankSpaces() : void</text><ellipse cx="18" cy="322.5815" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="208" x="27" y="326.5134">GenerateBreakableTiles() : void</text><ellipse cx="18" cy="341.6494" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="27" y="345.5814">DestroyMatches() : void</text><ellipse cx="18" cy="360.7173" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="428" x="27" y="364.6493">SwitchAndCheck(column:int, row:int, direction:Vector2Int) : bool</text></g><!--MD5=[83b3cf3d23d77c6f1e1b5291a241bc2a]
-class MonoBehaviour--><g id="elem_MonoBehaviour"><rect fill="#F1F1F1" height="48" id="MonoBehaviour" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="138" x="393" y="26.07"/><ellipse cx="408" cy="42.07" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M407.4688,48.9919 Q405.7188,48.9919 404.5781,48.2575 Q403.4531,47.5075 402.8906,46.1638 Q402.3438,44.8044 402.3438,43.0075 Q402.3438,40.9763 403,39.5231 Q403.6563,38.07 404.9375,37.2888 Q406.2188,36.5075 408.0938,36.5075 Q408.9844,36.5075 409.6563,36.695 Q410.3281,36.8669 411.0156,37.2106 L410.2031,39.2263 Q409.5781,38.9138 409.0313,38.7888 Q408.5,38.6638 408.0156,38.6638 Q406.8438,38.6638 406.1406,39.195 Q405.4375,39.7263 405.1406,40.6794 Q404.8438,41.6325 404.8438,42.8981 Q404.8438,44.9138 405.5625,45.8825 Q406.2813,46.8356 407.875,46.8356 Q408.4688,46.8356 409.0938,46.6794 Q409.7188,46.5231 410.5469,46.1481 L410.5469,48.3669 Q409.8125,48.6794 409.0156,48.8356 Q408.2344,48.9919 407.4688,48.9919 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="422" y="47.502">MonoBehaviour</text><line style="stroke:#181818;stroke-width:0.5;" x1="394" x2="530" y1="58.07" y2="58.07"/><line style="stroke:#181818;stroke-width:0.5;" x1="394" x2="530" y1="66.07" y2="66.07"/></g><!--MD5=[064f7a74fee85463ec1a30143664ee17]
-class GameObject--><g id="elem_GameObject"><rect fill="#F1F1F1" height="48" id="GameObject" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="115" x="399.5" y="943.75"/><ellipse cx="414.5" cy="959.75" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M413.9688,966.6719 Q412.2188,966.6719 411.0781,965.9375 Q409.9531,965.1875 409.3906,963.8438 Q408.8438,962.4844 408.8438,960.6875 Q408.8438,958.6563 409.5,957.2031 Q410.1563,955.75 411.4375,954.9688 Q412.7188,954.1875 414.5938,954.1875 Q415.4844,954.1875 416.1563,954.375 Q416.8281,954.5469 417.5156,954.8906 L416.7031,956.9063 Q416.0781,956.5938 415.5313,956.4688 Q415,956.3438 414.5156,956.3438 Q413.3438,956.3438 412.6406,956.875 Q411.9375,957.4063 411.6406,958.3594 Q411.3438,959.3125 411.3438,960.5781 Q411.3438,962.5938 412.0625,963.5625 Q412.7813,964.5156 414.375,964.5156 Q414.9688,964.5156 415.5938,964.3594 Q416.2188,964.2031 417.0469,963.8281 L417.0469,966.0469 Q416.3125,966.3594 415.5156,966.5156 Q414.7344,966.6719 413.9688,966.6719 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="428.5" y="965.182">GameObject</text><line style="stroke:#181818;stroke-width:0.5;" x1="400.5" x2="513.5" y1="975.75" y2="975.75"/><line style="stroke:#181818;stroke-width:0.5;" x1="400.5" x2="513.5" y1="983.75" y2="983.75"/></g><!--MD5=[dd8a4c39a55de402715073e2862d1c2e]
-class Dot--><g id="elem_Dot"><rect codeLine="104" fill="#F1F1F1" height="391.2225" id="Dot" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="224" x="345" y="452.75"/><ellipse cx="441.25" cy="468.75" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M440.7188,475.6719 Q438.9688,475.6719 437.8281,474.9375 Q436.7031,474.1875 436.1406,472.8438 Q435.5938,471.4844 435.5938,469.6875 Q435.5938,467.6563 436.25,466.2031 Q436.9063,464.75 438.1875,463.9688 Q439.4688,463.1875 441.3438,463.1875 Q442.2344,463.1875 442.9063,463.375 Q443.5781,463.5469 444.2656,463.8906 L443.4531,465.9063 Q442.8281,465.5938 442.2813,465.4688 Q441.75,465.3438 441.2656,465.3438 Q440.0938,465.3438 439.3906,465.875 Q438.6875,466.4063 438.3906,467.3594 Q438.0938,468.3125 438.0938,469.5781 Q438.0938,471.5938 438.8125,472.5625 Q439.5313,473.5156 441.125,473.5156 Q441.7188,473.5156 442.3438,473.3594 Q442.9688,473.2031 443.7969,472.8281 L443.7969,475.0469 Q443.0625,475.3594 442.2656,475.5156 Q441.4844,475.6719 440.7188,475.6719 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="23" x="461.75" y="474.182">Dot</text><line style="stroke:#181818;stroke-width:0.5;" x1="346" x2="568" y1="484.75" y2="484.75"/><ellipse cx="356" cy="499.784" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="365" y="503.7159">column : int</text><ellipse cx="356" cy="518.8519" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="365" y="522.7839">row : int</text><ellipse cx="356" cy="537.9198" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="365" y="541.8518">previousColumn : int</text><ellipse cx="356" cy="556.9877" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="365" y="560.9197">previousRow : int</text><ellipse cx="356" cy="576.0556" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="365" y="579.9876">targetX : int</text><ellipse cx="356" cy="595.1235" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="365" y="599.0555">targetY : int</text><ellipse cx="356" cy="614.1915" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="365" y="618.1234">isMatched : bool = false</text><ellipse cx="356" cy="633.2594" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144" x="365" y="637.1914">swipeAngle : float = 0</text><ellipse cx="356" cy="652.3273" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="365" y="656.2593">swipeResist : float = 1f</text><ellipse cx="356" cy="671.3952" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="365" y="675.3272">isColorBomb : bool</text><ellipse cx="356" cy="690.4631" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="365" y="694.3951">isColumnBomb : bool</text><ellipse cx="356" cy="709.531" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="365" y="713.463">isRowBomb : bool</text><ellipse cx="356" cy="728.599" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="365" y="732.5309">isAdjacentBomb : bool</text><line style="stroke:#181818;stroke-width:0.5;" x1="346" x2="568" y1="740.6329" y2="740.6329"/><ellipse cx="356" cy="755.6669" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="365" y="759.5989">CheckMoveCo() : IEnumerator</text><ellipse cx="356" cy="774.7348" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="365" y="778.6668">MakeRowBomb() : void</text><ellipse cx="356" cy="793.8027" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="365" y="797.7347">MakeColumnBomb() : void</text><ellipse cx="356" cy="812.8706" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="365" y="816.8026">MakeColorBomb() : void</text><ellipse cx="356" cy="831.9385" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="365" y="835.8705">MakeAdjacentBomb() : void</text></g><!--MD5=[5445b9eed04bff0efa05dfb87ca2525b]
-link TileType to TileKind--><g id="link_TileType_TileKind"><path codeLine="97" d="M837,93.49 C837,125.31 837,169.21 837,204.23 " fill="none" id="TileType-to-TileKind" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="837,209.14,841,200.14,837,204.14,833,200.14,837,209.14" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="788.6953" y="198.6554">tileKind</text></g><!--MD5=[6bab5da86d9a5c61d1aca95883c28654]
-reverse link MonoBehaviour to Board--><g id="link_MonoBehaviour_Board"><path codeLine="98" d="M421.21,88.79 C401.59,106.94 376.95,129.73 352.06,152.75 " fill="none" id="MonoBehaviour-backto-Board" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="416.18,83.91,435.62,75.47,425.69,94.19,416.18,83.91" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[efd231c5b26e00db8a3ff228451e80c1]
-link Board to GameState--><g id="link_Board_GameState"><path codeLine="99" d="M464.37,262.94 C464.37,262.94 494.78,262.94 509.34,262.94 " fill="none" id="Board-GameState" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="519.11,262.94,510.11,258.94,514.11,262.94,510.11,266.94,519.11,262.94" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="514.11" x2="506.11" y1="262.94" y2="262.94"/><polygon fill="none" points="464.37,262.94,461.7953,269.6758,467.0227,274.6431,469.5974,267.9073,464.37,262.94" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="75" x="469.6027" y="281.8253">currentState</text></g><!--MD5=[421127b5e58a0c55cbe16791a2b21793]
-link Board to GameObject--><g id="link_Board_GameObject"><path codeLine="100" d="M195.45,373.14 C175.21,500.52 175.93,712.87 268,863.75 C294.94,907.89 348.78,937.22 393.78,952.92 " fill="none" id="Board-to-GameObject" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="398.36,954.47,391.1169,947.7964,393.6238,952.8674,388.5527,955.3743,398.36,954.47" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="334.6208" y="949.8615">tilePrefab</text></g><!--MD5=[421127b5e58a0c55cbe16791a2b21793]
-link Board to GameObject--><g id="link_Board_GameObject"><path codeLine="101" d="M220.45,373.14 C210.21,500.52 210.93,712.87 303,863.75 C324.22,898.53 362.15,924.11 395.05,941.08 " fill="none" id="Board-to-GameObject-1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="399.36,943.25,393.138,935.6154,394.8994,940.9911,389.5237,942.7525,399.36,943.25" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="118" x="273.5228" y="938.2904">breakableTilePrefab</text></g><!--MD5=[421127b5e58a0c55cbe16791a2b21793]
-link Board to GameObject--><g id="link_Board_GameObject"><path codeLine="102" d="M245.45,373.14 C245.21,500.52 245.93,712.87 338,863.75 C359.05,898.24 396.52,923.69 425.1,940.65 " fill="none" id="Board-to-GameObject-2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="429.38,943.17,423.6576,935.1541,425.0725,940.6312,419.5955,942.0461,429.38,943.17" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="79" x="434.3997" y="931.8491">destroyEffect</text></g><!--MD5=[28b0e7fb8eb876739ce9b398bd008fb1]
-link Board to Dot--><g id="link_Board_Dot"><path codeLine="103" d="M297.46,373.02 C311.4,396.98 326.58,423.08 341.86,449.33 " fill="none" id="Board-to-Dot" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="344.35,453.63,343.2743,443.8401,341.8324,449.3101,336.3624,447.8682,344.35,453.63" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="271.1969" y="440.8137">currentDot</text></g><!--MD5=[44313e97516be8a09e08c2c42776a7dc]
-reverse link MonoBehaviour to Dot--><g id="link_MonoBehaviour_Dot"><path codeLine="124" d="M551.53,72.08 C594.31,87.1 641.63,112.16 667,153.14 C718.38,236.12 698.31,280.3 667,372.75 C646.79,432.42 607.83,489.33 568.9,535.69 " fill="none" id="MonoBehaviour-backto-Dot" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="549.66,78.83,532.76,66.04,553.95,65.5,549.66,78.83" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[31f3b28f13d91156794433424a65a0cc]
-link Dot to GameObject--><g id="link_Dot_GameObject"><path codeLine="125" d="M405.69,843.54 C408.22,880.81 414.78,915.32 425.39,938.28 " fill="none" id="Dot-to-GameObject" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="427.49,942.5,427.0554,932.6607,425.2597,938.025,419.8954,936.2293,427.49,942.5" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="425.8425" y="931.4423">otherDot</text></g><!--MD5=[31f3b28f13d91156794433424a65a0cc]
-link Dot to GameObject--><g id="link_Dot_GameObject"><path codeLine="126" d="M431.34,843.54 C432.6,880.49 435.84,914.73 441.06,937.69 " fill="none" id="Dot-to-GameObject-1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="442.22,942.39,443.9446,932.6933,441.0208,937.5359,436.1781,934.6121,442.22,942.39" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="94" x="451.7431" y="931.7466">adjacentMarker</text></g><!--MD5=[31f3b28f13d91156794433424a65a0cc]
-link Dot to GameObject--><g id="link_Dot_GameObject"><path codeLine="127" d="M457,843.54 C457,880.33 457,914.44 457,937.4 " fill="none" id="Dot-to-GameObject-2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="457,942.35,461,933.35,457,937.35,453,933.35,457,942.35" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="508.625" y="931.4423">rowArrow</text></g><!--MD5=[31f3b28f13d91156794433424a65a0cc]
-link Dot to GameObject--><g id="link_Dot_GameObject"><path codeLine="128" d="M482.66,843.54 C481.4,880.49 478.16,914.73 472.94,937.69 " fill="none" id="Dot-to-GameObject-3" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="471.78,942.39,477.8219,934.6121,472.9792,937.5359,470.0554,932.6933,471.78,942.39" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81" x="486.8663" y="931.7466">columnArrow</text></g><!--MD5=[31f3b28f13d91156794433424a65a0cc]
-link Dot to GameObject--><g id="link_Dot_GameObject"><path codeLine="129" d="M508.31,843.54 C505.78,880.81 499.22,915.32 488.61,938.28 " fill="none" id="Dot-to-GameObject-4" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="486.51,942.5,494.1046,936.2293,488.7403,938.025,486.9446,932.6607,486.51,942.5" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="522.1551" y="948.9228">colorBomb</text></g><!--MD5=[b7f1d76995fa297816c19309ae70556f]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1492px" preserveAspectRatio="none" style="width:801px;height:1492px;background:#FFFFFF;" version="1.1" viewBox="0 0 801 1492" width="801px" zoomAndPan="magnify"><defs/><g><!--MD5=[44604d3a5c21bada3eded4c753f938e5]
+class CameraScalar--><g id="elem_CameraScalar"><rect codeLine="71" fill="#F1F1F1" height="181.4754" id="CameraScalar" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="287" x="373" y="7"/><ellipse cx="465.75" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M465.2188,29.9219 Q463.4688,29.9219 462.3281,29.1875 Q461.2031,28.4375 460.6406,27.0938 Q460.0938,25.7344 460.0938,23.9375 Q460.0938,21.9063 460.75,20.4531 Q461.4063,19 462.6875,18.2188 Q463.9688,17.4375 465.8438,17.4375 Q466.7344,17.4375 467.4063,17.625 Q468.0781,17.7969 468.7656,18.1406 L467.9531,20.1563 Q467.3281,19.8438 466.7813,19.7188 Q466.25,19.5938 465.7656,19.5938 Q464.5938,19.5938 463.8906,20.125 Q463.1875,20.6563 462.8906,21.6094 Q462.5938,22.5625 462.5938,23.8281 Q462.5938,25.8438 463.3125,26.8125 Q464.0313,27.7656 465.625,27.7656 Q466.2188,27.7656 466.8438,27.6094 Q467.4688,27.4531 468.2969,27.0781 L468.2969,29.2969 Q467.5625,29.6094 466.7656,29.7656 Q465.9844,29.9219 465.2188,29.9219 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="486.25" y="28.432">CameraScalar</text><line style="stroke:#181818;stroke-width:0.5;" x1="374" x2="659" y1="39" y2="39"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="381" y="51.034"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="393" y="57.9659">board : Board</text><ellipse cx="384" cy="73.1019" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="393" y="77.0339">cameraOffset : float</text><ellipse cx="384" cy="92.1698" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="393" y="96.1018">padding : float = 2</text><ellipse cx="384" cy="111.2377" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="393" y="115.1697">yOffset : float = 1</text><line style="stroke:#181818;stroke-width:0.5;" x1="374" x2="659" y1="123.2717" y2="123.2717"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="381" y="135.3056"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="393" y="142.2376">Start() : void</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="381" y="154.3735"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="261" x="393" y="161.3055">RepositionCamera(x:float, y:float) : void</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="381" y="173.4415"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="393" y="180.3734">Update() : void</text></g><!--MD5=[83b3cf3d23d77c6f1e1b5291a241bc2a]
+class MonoBehaviour--><g id="elem_MonoBehaviour"><rect fill="#F1F1F1" height="48" id="MonoBehaviour" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="138" x="24" y="807.74"/><ellipse cx="39" cy="823.74" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M38.4688,830.6619 Q36.7188,830.6619 35.5781,829.9275 Q34.4531,829.1775 33.8906,827.8338 Q33.3438,826.4744 33.3438,824.6775 Q33.3438,822.6463 34,821.1931 Q34.6563,819.74 35.9375,818.9588 Q37.2188,818.1775 39.0938,818.1775 Q39.9844,818.1775 40.6563,818.365 Q41.3281,818.5369 42.0156,818.8806 L41.2031,820.8963 Q40.5781,820.5838 40.0313,820.4588 Q39.5,820.3338 39.0156,820.3338 Q37.8438,820.3338 37.1406,820.865 Q36.4375,821.3963 36.1406,822.3494 Q35.8438,823.3025 35.8438,824.5681 Q35.8438,826.5838 36.5625,827.5525 Q37.2813,828.5056 38.875,828.5056 Q39.4688,828.5056 40.0938,828.3494 Q40.7188,828.1931 41.5469,827.8181 L41.5469,830.0369 Q40.8125,830.3494 40.0156,830.5056 Q39.2344,830.6619 38.4688,830.6619 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="53" y="829.172">MonoBehaviour</text><line style="stroke:#181818;stroke-width:0.5;" x1="25" x2="161" y1="839.74" y2="839.74"/><line style="stroke:#181818;stroke-width:0.5;" x1="25" x2="161" y1="847.74" y2="847.74"/></g><!--MD5=[dd8a4c39a55de402715073e2862d1c2e]
+class Dot--><g id="elem_Dot"><rect codeLine="81" fill="#F1F1F1" height="753.5129" id="Dot" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="332" x="350.5" y="222.98"/><ellipse cx="500.75" cy="238.98" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M500.2188,245.9019 Q498.4688,245.9019 497.3281,245.1675 Q496.2031,244.4175 495.6406,243.0738 Q495.0938,241.7144 495.0938,239.9175 Q495.0938,237.8863 495.75,236.4331 Q496.4063,234.98 497.6875,234.1988 Q498.9688,233.4175 500.8438,233.4175 Q501.7344,233.4175 502.4063,233.605 Q503.0781,233.7769 503.7656,234.1206 L502.9531,236.1363 Q502.3281,235.8238 501.7813,235.6988 Q501.25,235.5738 500.7656,235.5738 Q499.5938,235.5738 498.8906,236.105 Q498.1875,236.6363 497.8906,237.5894 Q497.5938,238.5425 497.5938,239.8081 Q497.5938,241.8238 498.3125,242.7925 Q499.0313,243.7456 500.625,243.7456 Q501.2188,243.7456 501.8438,243.5894 Q502.4688,243.4331 503.2969,243.0581 L503.2969,245.2769 Q502.5625,245.5894 501.7656,245.7456 Q500.9844,245.9019 500.2188,245.9019 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="23" x="521.25" y="244.412">Dot</text><line style="stroke:#181818;stroke-width:0.5;" x1="351.5" x2="681.5" y1="254.98" y2="254.98"/><ellipse cx="361.5" cy="270.014" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="370.5" y="273.9459">column : int</text><ellipse cx="361.5" cy="289.0819" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="370.5" y="293.0139">row : int</text><ellipse cx="361.5" cy="308.1498" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="370.5" y="312.0818">previousColumn : int</text><ellipse cx="361.5" cy="327.2177" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="370.5" y="331.1497">previousRow : int</text><ellipse cx="361.5" cy="346.2856" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="370.5" y="350.2176">targetX : int</text><ellipse cx="361.5" cy="365.3535" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="370.5" y="369.2855">targetY : int</text><ellipse cx="361.5" cy="384.4215" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="370.5" y="388.3534">isMatched : bool = false</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="358.5" y="400.4894"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="370.5" y="407.4214">hintManager : HintManager</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="358.5" y="419.5573"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="370.5" y="426.4893">findMatches : FindMatches</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="358.5" y="438.6252"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="370.5" y="445.5572">board : Board</text><ellipse cx="361.5" cy="460.6931" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="154" x="370.5" y="464.6251">otherDot : GameObject</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="358.5" y="476.761"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="370.5" y="483.693">firstTouchPosition : Vector2</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="358.5" y="495.829"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="186" x="370.5" y="502.7609">finalTouchPosition : Vector2</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="358.5" y="514.8969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="370.5" y="521.8289">tempPosition : Vector2</text><ellipse cx="361.5" cy="536.9648" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144" x="370.5" y="540.8968">swipeAngle : float = 0</text><ellipse cx="361.5" cy="556.0327" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="370.5" y="559.9647">swipeResist : float = 1f</text><ellipse cx="361.5" cy="575.1006" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="370.5" y="579.0326">isColorBomb : bool</text><ellipse cx="361.5" cy="594.1685" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="370.5" y="598.1005">isColumnBomb : bool</text><ellipse cx="361.5" cy="613.2365" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="370.5" y="617.1684">isRowBomb : bool</text><ellipse cx="361.5" cy="632.3044" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="370.5" y="636.2364">isAdjacentBomb : bool</text><ellipse cx="361.5" cy="651.3723" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="201" x="370.5" y="655.3043">adjacentMarker : GameObject</text><ellipse cx="361.5" cy="670.4402" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="160" x="370.5" y="674.3722">rowArrow : GameObject</text><ellipse cx="361.5" cy="689.5081" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="370.5" y="693.4401">columnArrow : GameObject</text><ellipse cx="361.5" cy="708.576" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167" x="370.5" y="712.508">colorBomb : GameObject</text><line style="stroke:#181818;stroke-width:0.5;" x1="351.5" x2="681.5" y1="720.61" y2="720.61"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="358.5" y="732.644"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="370.5" y="739.5759">Start() : void</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="358.5" y="751.7119"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="370.5" y="758.6439">OnMouseOver() : void</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="358.5" y="770.7798"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="370.5" y="777.7118">Update() : void</text><ellipse cx="361.5" cy="792.8477" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="370.5" y="796.7797">CheckMoveCo() : IEnumerator</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="358.5" y="808.9156"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="370.5" y="815.8476">OnMouseDown() : void</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="358.5" y="827.9835"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="370.5" y="834.9155">OnMouseUp() : void</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="358.5" y="847.0515"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="370.5" y="853.9834">CalculateAngle() : void</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="358.5" y="866.1194"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="306" x="370.5" y="873.0514">MovePiecesEngine(direction:Vector2Int) : void</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="358.5" y="885.1873"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="370.5" y="892.1193">MovePieces() : void</text><ellipse cx="361.5" cy="907.2552" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="370.5" y="911.1872">MakeRowBomb() : void</text><ellipse cx="361.5" cy="926.3231" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="370.5" y="930.2551">MakeColumnBomb() : void</text><ellipse cx="361.5" cy="945.391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="370.5" y="949.323">MakeColorBomb() : void</text><ellipse cx="361.5" cy="964.459" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="370.5" y="968.3909">MakeAdjacentBomb() : void</text></g><!--MD5=[42fc56340decc66cd27f57a6fafaf26c]
+class FadePanelController--><g id="elem_FadePanelController"><rect codeLine="121" fill="#F1F1F1" height="105.2038" id="FadePanelController" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="200" x="416.5" y="1011.14"/><ellipse cx="445.9" cy="1027.14" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M445.3688,1034.0619 Q443.6188,1034.0619 442.4781,1033.3275 Q441.3531,1032.5775 440.7906,1031.2337 Q440.2438,1029.8744 440.2438,1028.0775 Q440.2438,1026.0462 440.9,1024.5931 Q441.5563,1023.14 442.8375,1022.3587 Q444.1188,1021.5775 445.9938,1021.5775 Q446.8844,1021.5775 447.5563,1021.765 Q448.2281,1021.9369 448.9156,1022.2806 L448.1031,1024.2962 Q447.4781,1023.9837 446.9313,1023.8587 Q446.4,1023.7337 445.9156,1023.7337 Q444.7438,1023.7337 444.0406,1024.265 Q443.3375,1024.7962 443.0406,1025.7494 Q442.7438,1026.7025 442.7438,1027.9681 Q442.7438,1029.9837 443.4625,1030.9525 Q444.1813,1031.9056 445.775,1031.9056 Q446.3688,1031.9056 446.9938,1031.7494 Q447.6188,1031.5931 448.4469,1031.2181 L448.4469,1033.4369 Q447.7125,1033.7494 446.9156,1033.9056 Q446.1344,1034.0619 445.3688,1034.0619 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="463.1" y="1032.572">FadePanelController</text><line style="stroke:#181818;stroke-width:0.5;" x1="417.5" x2="615.5" y1="1043.14" y2="1043.14"/><ellipse cx="427.5" cy="1058.174" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="436.5" y="1062.1059">panelAnim : Animator</text><ellipse cx="427.5" cy="1077.2419" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="436.5" y="1081.1739">gameInfoAnim : Animator</text><line style="stroke:#181818;stroke-width:0.5;" x1="417.5" x2="615.5" y1="1089.2758" y2="1089.2758"/><ellipse cx="427.5" cy="1104.3098" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="436.5" y="1108.2418">OK() : void</text></g><!--MD5=[05da6f9c3b20afe1900b3e9902dc36dd]
+class FindMatches--><g id="elem_FindMatches"><rect codeLine="127" fill="#F1F1F1" height="334.0188" id="FindMatches" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="555" x="239" y="1151.73"/><ellipse cx="469.25" cy="1167.73" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M468.7188,1174.6519 Q466.9688,1174.6519 465.8281,1173.9175 Q464.7031,1173.1675 464.1406,1171.8238 Q463.5938,1170.4644 463.5938,1168.6675 Q463.5938,1166.6363 464.25,1165.1831 Q464.9063,1163.73 466.1875,1162.9488 Q467.4688,1162.1675 469.3438,1162.1675 Q470.2344,1162.1675 470.9063,1162.355 Q471.5781,1162.5269 472.2656,1162.8706 L471.4531,1164.8863 Q470.8281,1164.5738 470.2813,1164.4488 Q469.75,1164.3238 469.2656,1164.3238 Q468.0938,1164.3238 467.3906,1164.855 Q466.6875,1165.3863 466.3906,1166.3394 Q466.0938,1167.2925 466.0938,1168.5581 Q466.0938,1170.5738 466.8125,1171.5425 Q467.5313,1172.4956 469.125,1172.4956 Q469.7188,1172.4956 470.3438,1172.3394 Q470.9688,1172.1831 471.7969,1171.8081 L471.7969,1174.0269 Q471.0625,1174.3394 470.2656,1174.4956 Q469.4844,1174.6519 468.7188,1174.6519 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="489.75" y="1173.162">FindMatches</text><line style="stroke:#181818;stroke-width:0.5;" x1="240" x2="793" y1="1183.73" y2="1183.73"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="247" y="1195.764"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="259" y="1202.6959">board : Board</text><ellipse cx="250" cy="1217.8319" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="241" x="259" y="1221.7639">currentMatches : List&lt;GameObject&gt;</text><line style="stroke:#181818;stroke-width:0.5;" x1="240" x2="793" y1="1229.8658" y2="1229.8658"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="247" y="1241.8998"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="259" y="1248.8318">Start() : void</text><ellipse cx="250" cy="1263.9677" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="259" y="1267.8997">FindAllMatches() : void</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="247" y="1280.0356"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="439" x="259" y="1286.9676">IsAdjacentBomb(dot1:Dot, dot2:Dot, dot3:Dot) : List&lt;GameObject&gt;</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="247" y="1299.1035"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="408" x="259" y="1306.0355">IsRowBomb(dot1:Dot, dot2:Dot, dot3:Dot) : List&lt;GameObject&gt;</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="247" y="1318.1715"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="432" x="259" y="1325.1034">IsColumnBomb(dot1:Dot, dot2:Dot, dot3:Dot) : List&lt;GameObject&gt;</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="247" y="1337.2394"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292" x="259" y="1344.1714">AddToListAndMatch(dot:GameObject) : void</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="247" y="1356.3073"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="529" x="259" y="1363.2393">GetNearbyPieces(dot1:GameObject, dot2:GameObject, dot3:GameObject) : void</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="247" y="1375.3752"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="225" x="259" y="1382.3072">FindAllMatchesCo() : IEnumerator</text><ellipse cx="250" cy="1397.4431" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="260" x="259" y="1401.3751">MatchPiecesOfColor(color:string) : void</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="247" y="1413.511"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="393" x="259" y="1420.443">GetAdjacentPieces(column:int, row:int) : List&lt;GameObject&gt;</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="247" y="1432.579"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="331" x="259" y="1439.5109">GetColumnPieces(column:int) : List&lt;GameObject&gt;</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="247" y="1451.6469"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="282" x="259" y="1458.5789">GetRowPieces(row:int) : List&lt;GameObject&gt;</text><ellipse cx="250" cy="1473.7148" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="259" y="1477.6468">CheckBombs() : void</text></g><!--MD5=[ddd33a29ea908bbaf2af30a135364761]
+class BlankGoal--><g id="elem_BlankGoal"><rect codeLine="145" fill="#F1F1F1" height="124.2717" id="BlankGoal" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="172" x="7" y="648.6"/><ellipse cx="55.25" cy="664.6" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M54.7188,671.5219 Q52.9688,671.5219 51.8281,670.7875 Q50.7031,670.0375 50.1406,668.6938 Q49.5938,667.3344 49.5938,665.5375 Q49.5938,663.5063 50.25,662.0531 Q50.9063,660.6 52.1875,659.8188 Q53.4688,659.0375 55.3438,659.0375 Q56.2344,659.0375 56.9063,659.225 Q57.5781,659.3969 58.2656,659.7406 L57.4531,661.7563 Q56.8281,661.4438 56.2813,661.3188 Q55.75,661.1938 55.2656,661.1938 Q54.0938,661.1938 53.3906,661.725 Q52.6875,662.2563 52.3906,663.2094 Q52.0938,664.1625 52.0938,665.4281 Q52.0938,667.4438 52.8125,668.4125 Q53.5313,669.3656 55.125,669.3656 Q55.7188,669.3656 56.3438,669.2094 Q56.9688,669.0531 57.7969,668.6781 L57.7969,670.8969 Q57.0625,671.2094 56.2656,671.3656 Q55.4844,671.5219 54.7188,671.5219 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="75.75" y="670.032">BlankGoal</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="178" y1="680.6" y2="680.6"/><ellipse cx="18" cy="695.634" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="27" y="699.5659">numberNeeded : int</text><ellipse cx="18" cy="714.7019" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="27" y="718.6339">numberCollected : int</text><ellipse cx="18" cy="733.7698" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="27" y="737.7018">goalSprite : Sprite</text><ellipse cx="18" cy="752.8377" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="27" y="756.7697">matchValue : string</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="178" y1="764.8717" y2="764.8717"/></g><!--MD5=[a4522694234bcd4924daf9d31214ec6f]
+reverse link MonoBehaviour to CameraScalar--><g id="link_MonoBehaviour_CameraScalar"><path codeLine="80" d="M177.7,792.53 C178.14,791.94 178.58,791.34 179,790.74 C329.11,576.78 80.76,413.76 239,205.74 C271.37,163.19 322.92,137.39 372.78,121.75 " fill="none" id="MonoBehaviour-backto-CameraScalar" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="182.62,797.51,163.31,806.23,172.96,787.37,182.62,797.51" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[44313e97516be8a09e08c2c42776a7dc]
+reverse link MonoBehaviour to Dot--><g id="link_MonoBehaviour_Dot"><path codeLine="120" d="M165.23,797.82 C169.91,795.46 174.53,793.08 179,790.74 C235.37,761.19 296.11,727.35 350.26,696.44 " fill="none" id="MonoBehaviour-backto-Dot" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="168.35,804.08,147.32,806.68,162.14,791.54,168.35,804.08" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[2b48ed1cb64280cacd387ac1be2b4fd7]
+reverse link MonoBehaviour to FadePanelController--><g id="link_MonoBehaviour_FadePanelController"><path codeLine="126" d="M120.96,873.97 C146.83,911.04 189.23,963.61 239,993.74 C292.69,1026.24 361,1043.72 416.28,1053.08 " fill="none" id="MonoBehaviour-backto-FadePanelController" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="115.21,877.95,109.84,857.45,126.82,870.13,115.21,877.95" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f2250e6faaaf3f1048fc511d84e16012]
+reverse link MonoBehaviour to FindMatches--><g id="link_MonoBehaviour_FindMatches"><path codeLine="144" d="M107.12,876.43 C127.32,939.4 170.98,1055.3 239,1133.74 C244.2,1139.74 249.64,1145.63 255.28,1151.4 " fill="none" id="MonoBehaviour-backto-FindMatches" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="100.51,878.78,101.29,857.6,113.89,874.64,100.51,878.78" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d34b90f9dea8a99501a3502326100742]
 @startuml
 left to right direction
 class Backgroundtile {
     + hitPoints : int
+    - spriteRenderer : SpriteRenderer
+    + breakSprite : Sprite
+    - Start() : void
+    - Update() : void
     + TakeDamage(damage:int) : void
+    - MakeBreakColor() : void
+    - MakeBreakSprite() : void
 }
 MonoBehaviour <|- - Backgroundtile
-Backgroundtile - -> "breakSprite" Sprite
-class CameraScalar {
-    + cameraOffset : float
-    + padding : float = 2
-    + yOffset : float = 1
-}
-MonoBehaviour <|- - CameraScalar
-class FadePanelController {
-    + OK() : void
-}
-MonoBehaviour <|- - FadePanelController
-FadePanelController - -> "panelAnim" Animator
-FadePanelController - -> "gameInfoAnim" Animator
-class FindMatches {
-    + FindAllMatches() : void
-    + MatchPiecesOfColor(color:string) : void
-    + CheckBombs() : void
-}
-class "List`1"<T> {
-}
-MonoBehaviour <|- - FindMatches
-FindMatches o-> "currentMatches<GameObject>" "List`1"
-class BlankGoal {
-    + numberNeeded : int
-    + numberCollected : int
-    + matchValue : string
-}
-class GoalManager {
-}
-BlankGoal - -> "goalSprite" Sprite
-MonoBehaviour <|- - GoalManager
-GoalManager - -> "goalPrefab" GameObject
-GoalManager - -> "goalIntroParent" GameObject
-GoalManager - -> "goalGameParent" GameObject
-class GoalPanel {
-    + thisString : string
-}
-MonoBehaviour <|- - GoalPanel
-GoalPanel - -> "thisImage" Image
-GoalPanel - -> "thisSprite" Sprite
-GoalPanel - -> "thisText" TextMeshProUGUI
-class HintManager {
-    + hintDelay : float
-    + DestroyHint() : void
-}
-MonoBehaviour <|- - HintManager
-HintManager - -> "hintParticle" GameObject
-HintManager - -> "currentHint" GameObject
-class ScoreManager {
-    + score : int
-    + IncreaseScore(amountToIncrease:int) : void
-}
-MonoBehaviour <|- - ScoreManager
-ScoreManager - -> "scoreText" TextMeshProUGUI
-ScoreManager - -> "scoreBar" Image
-class SoundManager {
-    + Start() : void
-    + Update() : void
-    + PlayRandomDestroyNoise() : void
-}
-MonoBehaviour <|- - SoundManager
-SoundManager - -> "backgroundMusic" AudioSource
-SoundManager - -> "introSection" AudioSource
-
-newpage
-top to bottom direction
 enum GameState {
     wait,
     move,
@@ -104,25 +34,62 @@ enum TileKind {
 class TileType {
     + x : int
     + y : int
+    + tileKind : TileKind
 }
 class Board {
+    + currentState : GameState
     + width : int
     + height : int
     + offSet : int
+    + tilePrefab : GameObject
+    + breakableTilePrefab : GameObject
+    + dots : GameObject[]
+    + destroyEffect : GameObject
+    + boardLayout : TileType[]
+    - blankSpaces : bool[,]
+    - breakableTiles : Backgroundtile[,]
+    + allDots : GameObject[,]
+    + currentDot : Dot
+    - findMatches : FindMatches
+    - scoreManager : ScoreManager
+    - soundManager : SoundManager
     + basePieceVal : int = 10
+    - streakValue : int = 1
     + refillDelay : float = 0.5f
+    + scoreGoals : int[]
+    - Start() : void
     + GenerateBlankSpaces() : void
     + GenerateBreakableTiles() : void
+    - SetUp() : void
+    - MatchesAt(column:int, row:int, piece:GameObject) : bool
+    - ColumnOrRow() : bool
+    - CheckToMakeBombs() : void
+    - DestroyMatchesAt(column:int, row:int) : void
     + DestroyMatches() : void
+    - DecreaseRowCo2() : IEnumerator
+    - RefillBoard() : void
+    - MatchesOnBoard() : bool
+    - FillBoardCo() : IEnumerator
+    - SwitchPieces(column:int, row:int, direction:Vector2Int) : void
+    - CheckForMatches() : bool
     + SwitchAndCheck(column:int, row:int, direction:Vector2Int) : bool
+    - IsDeadlocked() : bool
+    - ShuffleBoard() : IEnumerator
 }
-TileType - -> "tileKind" TileKind
 MonoBehaviour <|- - Board
-Board o-> "currentState" GameState
-Board - -> "tilePrefab" GameObject
-Board - -> "breakableTilePrefab" GameObject
-Board - -> "destroyEffect" GameObject
-Board - -> "currentDot" Dot
+
+newpage
+left to right direction
+class CameraScalar {
+    - board : Board
+    + cameraOffset : float
+    + padding : float = 2
+    + yOffset : float = 1
+    - Start() : void
+    - RepositionCamera(x:float, y:float) : void
+    - Update() : void
+}
+MonoBehaviour <|- - CameraScalar
 class Dot {
     + column : int
     + row : int
@@ -131,24 +98,129 @@ class Dot {
     + targetX : int
     + targetY : int
     + isMatched : bool = false
+    - hintManager : HintManager
+    - findMatches : FindMatches
+    - board : Board
+    + otherDot : GameObject
+    - firstTouchPosition : Vector2
+    - finalTouchPosition : Vector2
+    - tempPosition : Vector2
     + swipeAngle : float = 0
     + swipeResist : float = 1f
     + isColorBomb : bool
     + isColumnBomb : bool
     + isRowBomb : bool
     + isAdjacentBomb : bool
+    + adjacentMarker : GameObject
+    + rowArrow : GameObject
+    + columnArrow : GameObject
+    + colorBomb : GameObject
+    - Start() : void
+    - OnMouseOver() : void
+    - Update() : void
     + CheckMoveCo() : IEnumerator
+    - OnMouseDown() : void
+    - OnMouseUp() : void
+    - CalculateAngle() : void
+    - MovePiecesEngine(direction:Vector2Int) : void
+    - MovePieces() : void
     + MakeRowBomb() : void
     + MakeColumnBomb() : void
     + MakeColorBomb() : void
     + MakeAdjacentBomb() : void
 }
 MonoBehaviour <|- - Dot
-Dot - -> "otherDot" GameObject
-Dot - -> "adjacentMarker" GameObject
-Dot - -> "rowArrow" GameObject
-Dot - -> "columnArrow" GameObject
-Dot - -> "colorBomb" GameObject
+class FadePanelController {
+    + panelAnim : Animator
+    + gameInfoAnim : Animator
+    + OK() : void
+}
+MonoBehaviour <|- - FadePanelController
+class FindMatches {
+    - board : Board
+    + currentMatches : List<GameObject>
+    - Start() : void
+    + FindAllMatches() : void
+    - IsAdjacentBomb(dot1:Dot, dot2:Dot, dot3:Dot) : List<GameObject>
+    - IsRowBomb(dot1:Dot, dot2:Dot, dot3:Dot) : List<GameObject>
+    - IsColumnBomb(dot1:Dot, dot2:Dot, dot3:Dot) : List<GameObject>
+    - AddToListAndMatch(dot:GameObject) : void
+    - GetNearbyPieces(dot1:GameObject, dot2:GameObject, dot3:GameObject) : void
+    - FindAllMatchesCo() : IEnumerator
+    + MatchPiecesOfColor(color:string) : void
+    - GetAdjacentPieces(column:int, row:int) : List<GameObject>
+    - GetColumnPieces(column:int) : List<GameObject>
+    - GetRowPieces(row:int) : List<GameObject>
+    + CheckBombs() : void
+}
+MonoBehaviour <|- - FindMatches
+class BlankGoal {
+    + numberNeeded : int
+    + numberCollected : int
+    + goalSprite : Sprite
+    + matchValue : string
+}
+
+newpage
+left to right direction
+class GoalManager {
+    + levelGoals : BlankGoal[]
+    + goalPrefab : GameObject
+    + goalIntroParent : GameObject
+    + goalGameParent : GameObject
+    - Start() : void
+    - SetupIntroGoals() : void
+    - Update() : void
+}
+MonoBehaviour <|- - GoalManager
+class GoalPanel {
+    + thisImage : Image
+    + thisSprite : Sprite
+    + thisText : TextMeshProUGUI
+    + thisString : string
+    - Start() : void
+    - Setup() : void
+    - Update() : void
+}
+MonoBehaviour <|- - GoalPanel
+class HintManager {
+    - board : Board
+    + hintDelay : float
+    - hintDelaySeconds : float
+    + hintParticle : GameObject
+    + currentHint : GameObject
+    - Start() : void
+    - Update() : void
+    - FindAllMatches() : List<GameObject>
+    - RandomPickOne() : GameObject
+    - MarkHint() : void
+    + DestroyHint() : void
+}
+MonoBehaviour <|- - HintManager
+class ScoreManager {
+    - board : Board
+    + scoreText : TextMeshProUGUI
+    + score : int
+    + scoreBar : Image
+    - Start() : void
+    - Update() : void
+    + IncreaseScore(amountToIncrease:int) : void
+    - LoadBar() : void
+}
+MonoBehaviour <|- - ScoreManager
+class SoundManager {
+    + destroyNoise : AudioSource[]
+    + backgroundMusic : AudioSource
+    + introSection : AudioSource
+    - introPlayed : bool = false
+    + Start() : void
+    + Update() : void
+    - PlayBackground() : void
+    - CheckPlayIntroToPlayBG() : void
+    - PlayIntro() : void
+    + PlayRandomDestroyNoise() : void
+}
+MonoBehaviour <|- - SoundManager
 @enduml
 
 PlantUML version 1.2022.7(Tue Aug 23 00:01:30 ICT 2022)

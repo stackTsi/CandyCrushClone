@@ -1,9 +1,13 @@
 @startuml
 class ScoreManager {
+    - board : Board
+    + scoreText : TextMeshProUGUI
     + score : int
+    + scoreBar : Image
+    - Start() : void
+    - Update() : void
     + IncreaseScore(amountToIncrease:int) : void
+    - LoadBar() : void
 }
 MonoBehaviour <|-- ScoreManager
-ScoreManager --> "scoreText" TextMeshProUGUI
-ScoreManager --> "scoreBar" Image
 @enduml

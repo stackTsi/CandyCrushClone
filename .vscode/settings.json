@@ -58,9 +58,5 @@
     },
     "dotnet.defaultSolution": "CandyCrushClone.sln",
     "cmake.sourceDirectory": "C:/Users/dongh/OneDrive/Desktop/CGProject/Candy Crush Clone/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/Editor/COMIntegration/COMIntegration~",
-    "csharp2plantuml.inputPath": "Assets/Scripts",
-    "csharp2plantuml.outputPath": "PlantUML",
-    "csharp2plantuml.createAssociation": true,
-    "csharp2plantuml.allInOne": true,
     "plantuml.exportOutDir": "PlantUML/out"
 }

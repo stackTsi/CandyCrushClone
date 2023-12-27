@@ -2,13 +2,17 @@
 class BlankGoal {
     + numberNeeded : int
     + numberCollected : int
+    + goalSprite : Sprite
     + matchValue : string
 }
 class GoalManager {
+    + levelGoals : BlankGoal[]
+    + goalPrefab : GameObject
+    + goalIntroParent : GameObject
+    + goalGameParent : GameObject
+    - Start() : void
+    - SetupIntroGoals() : void
+    - Update() : void
 }
-BlankGoal --> "goalSprite" Sprite
 MonoBehaviour <|-- GoalManager
-GoalManager --> "goalPrefab" GameObject
-GoalManager --> "goalIntroParent" GameObject
-GoalManager --> "goalGameParent" GameObject
 @enduml

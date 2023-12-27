@@ -11,23 +11,47 @@ enum TileKind {
 class TileType {
     + x : int
     + y : int
+    + tileKind : TileKind
 }
 class Board {
+    + currentState : GameState
     + width : int
     + height : int
     + offSet : int
+    + tilePrefab : GameObject
+    + breakableTilePrefab : GameObject
+    + dots : GameObject[]
+    + destroyEffect : GameObject
+    + boardLayout : TileType[]
+    - blankSpaces : bool[,]
+    - breakableTiles : Backgroundtile[,]
+    + allDots : GameObject[,]
+    + currentDot : Dot
+    - findMatches : FindMatches
+    - scoreManager : ScoreManager
+    - soundManager : SoundManager
     + basePieceVal : int = 10
+    - streakValue : int = 1
     + refillDelay : float = 0.5f
+    + scoreGoals : int[]
+    - Start() : void
     + GenerateBlankSpaces() : void
     + GenerateBreakableTiles() : void
+    - SetUp() : void
+    - MatchesAt(column:int, row:int, piece:GameObject) : bool
+    - ColumnOrRow() : bool
+    - CheckToMakeBombs() : void
+    - DestroyMatchesAt(column:int, row:int) : void
     + DestroyMatches() : void
+    - DecreaseRowCo2() : IEnumerator
+    - RefillBoard() : void
+    - MatchesOnBoard() : bool
+    - FillBoardCo() : IEnumerator
+    - SwitchPieces(column:int, row:int, direction:Vector2Int) : void
+    - CheckForMatches() : bool
     + SwitchAndCheck(column:int, row:int, direction:Vector2Int) : bool
+    - IsDeadlocked() : bool
+    - ShuffleBoard() : IEnumerator
 }
-TileType --> "tileKind" TileKind
 MonoBehaviour <|-- Board
-Board o-> "currentState" GameState
-Board --> "tilePrefab" GameObject
-Board --> "breakableTilePrefab" GameObject
-Board --> "destroyEffect" GameObject
-Board --> "currentDot" Dot
 @enduml

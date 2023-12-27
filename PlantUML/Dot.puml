@@ -7,22 +7,36 @@ class Dot {
     + targetX : int
     + targetY : int
     + isMatched : bool = false
+    - hintManager : HintManager
+    - findMatches : FindMatches
+    - board : Board
+    + otherDot : GameObject
+    - firstTouchPosition : Vector2
+    - finalTouchPosition : Vector2
+    - tempPosition : Vector2
     + swipeAngle : float = 0
     + swipeResist : float = 1f
     + isColorBomb : bool
     + isColumnBomb : bool
     + isRowBomb : bool
     + isAdjacentBomb : bool
+    + adjacentMarker : GameObject
+    + rowArrow : GameObject
+    + columnArrow : GameObject
+    + colorBomb : GameObject
+    - Start() : void
+    - OnMouseOver() : void
+    - Update() : void
     + CheckMoveCo() : IEnumerator
+    - OnMouseDown() : void
+    - OnMouseUp() : void
+    - CalculateAngle() : void
+    - MovePiecesEngine(direction:Vector2Int) : void
+    - MovePieces() : void
     + MakeRowBomb() : void
     + MakeColumnBomb() : void
     + MakeColorBomb() : void
     + MakeAdjacentBomb() : void
 }
 MonoBehaviour <|-- Dot
-Dot --> "otherDot" GameObject
-Dot --> "adjacentMarker" GameObject
-Dot --> "rowArrow" GameObject
-Dot --> "columnArrow" GameObject
-Dot --> "colorBomb" GameObject
 @enduml

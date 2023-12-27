@@ -1,9 +1,12 @@
 @startuml
 class GoalPanel {
+    + thisImage : Image
+    + thisSprite : Sprite
+    + thisText : TextMeshProUGUI
     + thisString : string
+    - Start() : void
+    - Setup() : void
+    - Update() : void
 }
 MonoBehaviour <|-- GoalPanel
-GoalPanel --> "thisImage" Image
-GoalPanel --> "thisSprite" Sprite
-GoalPanel --> "thisText" TextMeshProUGUI
 @enduml

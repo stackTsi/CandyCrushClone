@@ -1,8 +1,8 @@
 @startuml
 class FadePanelController {
+    + panelAnim : Animator
+    + gameInfoAnim : Animator
     + OK() : void
 }
 MonoBehaviour <|-- FadePanelController
-FadePanelController --> "panelAnim" Animator
-FadePanelController --> "gameInfoAnim" Animator
 @enduml

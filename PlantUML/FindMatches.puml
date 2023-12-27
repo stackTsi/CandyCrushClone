@@ -1,11 +1,20 @@
 @startuml
 class FindMatches {
+    - board : Board
+    + currentMatches : List<GameObject>
+    - Start() : void
     + FindAllMatches() : void
+    - IsAdjacentBomb(dot1:Dot, dot2:Dot, dot3:Dot) : List<GameObject>
+    - IsRowBomb(dot1:Dot, dot2:Dot, dot3:Dot) : List<GameObject>
+    - IsColumnBomb(dot1:Dot, dot2:Dot, dot3:Dot) : List<GameObject>
+    - AddToListAndMatch(dot:GameObject) : void
+    - GetNearbyPieces(dot1:GameObject, dot2:GameObject, dot3:GameObject) : void
+    - FindAllMatchesCo() : IEnumerator
     + MatchPiecesOfColor(color:string) : void
+    - GetAdjacentPieces(column:int, row:int) : List<GameObject>
+    - GetColumnPieces(column:int) : List<GameObject>
+    - GetRowPieces(row:int) : List<GameObject>
     + CheckBombs() : void
 }
-class "List`1"<T> {
-}
 MonoBehaviour <|-- FindMatches
-FindMatches o-> "currentMatches<GameObject>" "List`1"
 @enduml

@@ -1,8 +1,12 @@
 @startuml
 class CameraScalar {
+    - board : Board
     + cameraOffset : float
     + padding : float = 2
     + yOffset : float = 1
+    - Start() : void
+    - RepositionCamera(x:float, y:float) : void
+    - Update() : void
 }
 MonoBehaviour <|-- CameraScalar
 @enduml
