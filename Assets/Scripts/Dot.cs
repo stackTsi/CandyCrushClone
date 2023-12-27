@@ -260,37 +260,37 @@ public class Dot : MonoBehaviour
         }
     }
 
-    void FindMatches()
-    {
-        if (column > 0 && column < board.width - 1)
-        {
-            GameObject leftDot1 = board.allDots[column - 1, row];
-            GameObject rightDot1 = board.allDots[column + 1, row];
-            if (leftDot1 != null && rightDot1 != null)
-            {
-                if (leftDot1.tag == this.gameObject.tag && rightDot1.tag == this.gameObject.tag)
-                {
-                    leftDot1.GetComponent<Dot>().isMatched = true;
-                    rightDot1.GetComponent<Dot>().isMatched = true;
-                    isMatched = true;
-                }
-            }
-        }
-        if (row > 0 && row < board.height - 1)
-        {
-            GameObject upDot1 = board.allDots[column, row + 1];
-            GameObject downDot1 = board.allDots[column, row - 1];
-            if (upDot1 != null && downDot1 != null)
-            {
-                if (upDot1.tag == this.gameObject.tag && downDot1.tag == this.gameObject.tag)
-                {
-                    upDot1.GetComponent<Dot>().isMatched = true;
-                    downDot1.GetComponent<Dot>().isMatched = true;
-                    isMatched = true;
-                }
-            }
-        }
-    }
+    // void FindMatches()
+    // {
+    //     if (column > 0 && column < board.width - 1)
+    //     {
+    //         GameObject leftDot1 = board.allDots[column - 1, row];
+    //         GameObject rightDot1 = board.allDots[column + 1, row];
+    //         if (leftDot1 != null && rightDot1 != null)
+    //         {
+    //             if (leftDot1.tag == this.gameObject.tag && rightDot1.tag == this.gameObject.tag)
+    //             {
+    //                 leftDot1.GetComponent<Dot>().isMatched = true;
+    //                 rightDot1.GetComponent<Dot>().isMatched = true;
+    //                 isMatched = true;
+    //             }
+    //         }
+    //     }
+    //     if (row > 0 && row < board.height - 1)
+    //     {
+    //         GameObject upDot1 = board.allDots[column, row + 1];
+    //         GameObject downDot1 = board.allDots[column, row - 1];
+    //         if (upDot1 != null && downDot1 != null)
+    //         {
+    //             if (upDot1.tag == this.gameObject.tag && downDot1.tag == this.gameObject.tag)
+    //             {
+    //                 upDot1.GetComponent<Dot>().isMatched = true;
+    //                 downDot1.GetComponent<Dot>().isMatched = true;
+    //                 isMatched = true;
+    //             }
+    //         }
+    //     }
+    // }
 
     public void MakeRowBomb()
     {

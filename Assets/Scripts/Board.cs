@@ -46,7 +46,7 @@ public class Board : MonoBehaviour
     public int[] scoreGoals;
     // Start is called before the first frame update
     void Start()
-    {   
+    {
         soundManager = FindObjectOfType<SoundManager>();
         scoreManager = FindObjectOfType<ScoreManager>();
         breakableTiles = new Backgroundtile[width, height];
@@ -73,7 +73,7 @@ public class Board : MonoBehaviour
         //checking for all tiles in the layout
         for (int i = 0; i < boardLayout.Length; i++)
         {
-            //if the tile is blank
+            //if the tile is set to breakable
             if (boardLayout[i].tileKind == TileKind.Breakable)
             {
                 //create a new breakable tile at that position
@@ -87,6 +87,7 @@ public class Board : MonoBehaviour
     {
         GenerateBreakableTiles();
         GenerateBlankSpaces();
+
         for (int i = 0; i < width; i++)
         {
             for (int j = 0; j < height; j++)
@@ -279,7 +280,8 @@ public class Board : MonoBehaviour
                 }
             }
             //sound manager null check
-            if(soundManager != null){
+            if (soundManager != null)
+            {
                 soundManager.PlayRandomDestroyNoise();
             }
             GameObject particle = Instantiate(destroyEffect, allDots[column, row].transform.position, Quaternion.identity);
@@ -320,7 +322,7 @@ public class Board : MonoBehaviour
                     {
                         if (allDots[i, iii] != null)
                         {
-                            //move the founded dot to this empty space
+                            //move the founded dot to this empty(matches)space
                             allDots[i, iii].GetComponent<Dot>().row = ii;
                             //set that spot to be null
                             allDots[i, iii] = null;
@@ -404,7 +406,7 @@ public class Board : MonoBehaviour
     {
         currentState = GameState.wait;
         RefillBoard();
-        yield return new WaitForSeconds(refillDelay);
+        yield return new WaitForSeconds(.6f * refillDelay);
 
         while (MatchesOnBoard())
         {
@@ -446,7 +448,7 @@ public class Board : MonoBehaviour
                     if (i < width - 2)
                     {
                         //check if the dots to the right and the dot next to it on the right exist
-                        if (allDots[i + 1, ii] != null && allDots[i + 2, ii] != null)
+                        if (allDots[i + 1, ii] != null && !blankSpaces[i + 1, ii] && allDots[i + 2, ii] != null && !blankSpaces[i + 2, ii])
                         {
                             if (allDots[i + 1, ii].tag == allDots[i, ii].tag
                             && allDots[i + 2, ii].tag == allDots[i, ii].tag)
@@ -458,7 +460,7 @@ public class Board : MonoBehaviour
                     if (ii < height - 2)
                     {
                         //check if the dots above(or below) exist
-                        if (allDots[i, ii + 1] != null && allDots[i, ii + 2] != null)
+                        if (allDots[i, ii + 1] != null &&  !blankSpaces[i,ii+1] && allDots[i, ii + 2] != null && !blankSpaces[i,ii+2])
                         {
                             if (allDots[i, ii + 1].tag == allDots[i, ii].tag
                             && allDots[i, ii + 2].tag == allDots[i, ii].tag)
