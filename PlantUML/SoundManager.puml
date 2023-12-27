@@ -1,0 +1,10 @@
+@startuml
+class SoundManager {
+    + Start() : void
+    + Update() : void
+    + PlayRandomDestroyNoise() : void
+}
+MonoBehaviour <|-- SoundManager
+SoundManager --> "backgroundMusic" AudioSource
+SoundManager --> "introSection" AudioSource
+@enduml

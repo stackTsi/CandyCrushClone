@@ -1,0 +1,11 @@
+@startuml
+class FindMatches {
+    + FindAllMatches() : void
+    + MatchPiecesOfColor(color:string) : void
+    + CheckBombs() : void
+}
+class "List`1"<T> {
+}
+MonoBehaviour <|-- FindMatches
+FindMatches o-> "currentMatches<GameObject>" "List`1"
+@enduml

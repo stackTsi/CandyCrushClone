@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="998px" preserveAspectRatio="none" style="width:888px;height:998px;background:#FFFFFF;" version="1.1" viewBox="0 0 888 998" width="888px" zoomAndPan="magnify"><defs/><g><!--MD5=[48e88c162c5505361c629eb6ff3812a8]
+class GameState--><g id="elem_GameState"><rect codeLine="73" fill="#F1F1F1" height="86.1358" id="GameState" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="105" x="520.5" y="219.94"/><ellipse cx="535.5" cy="235.94" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M531.8594,242.44 L531.8594,230.2994 L539.5156,230.2994 L539.5156,232.4244 L534.2344,232.4244 L534.2344,235.0806 L539.25,235.0806 L539.25,237.2056 L534.2344,237.2056 L534.2344,240.315 L539.5156,240.315 L539.5156,242.44 L531.8594,242.44 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="549.5" y="241.372">GameState</text><line style="stroke:#181818;stroke-width:0.5;" x1="521.5" x2="624.5" y1="251.94" y2="251.94"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="526.5" y="270.9059">wait,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="526.5" y="289.9739">move,</text><line style="stroke:#181818;stroke-width:0.5;" x1="521.5" x2="624.5" y1="298.0758" y2="298.0758"/></g><!--MD5=[b4ae9d073589224ef254da2d940e9e84]
+class TileKind--><g id="elem_TileKind"><rect codeLine="77" fill="#F1F1F1" height="105.2038" id="TileKind" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="87" x="793.5" y="210.44"/><ellipse cx="808.5" cy="226.44" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M804.8594,232.94 L804.8594,220.7994 L812.5156,220.7994 L812.5156,222.9244 L807.2344,222.9244 L807.2344,225.5806 L812.25,225.5806 L812.25,227.7056 L807.2344,227.7056 L807.2344,230.815 L812.5156,230.815 L812.5156,232.94 L804.8594,232.94 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="822.5" y="231.872">TileKind</text><line style="stroke:#181818;stroke-width:0.5;" x1="794.5" x2="879.5" y1="242.44" y2="242.44"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="799.5" y="261.4059">Breakable,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41" x="799.5" y="280.4739">Blank,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="799.5" y="299.5418">Normal,</text><line style="stroke:#181818;stroke-width:0.5;" x1="794.5" x2="879.5" y1="307.6438" y2="307.6438"/></g><!--MD5=[67dc9d447ac5dbb625e3d503755a5c3a]
+class TileType--><g id="elem_TileType"><rect codeLine="82" fill="#F1F1F1" height="86.1358" id="TileType" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="88" x="793" y="7"/><ellipse cx="808" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M807.4688,29.9219 Q805.7188,29.9219 804.5781,29.1875 Q803.4531,28.4375 802.8906,27.0938 Q802.3438,25.7344 802.3438,23.9375 Q802.3438,21.9063 803,20.4531 Q803.6563,19 804.9375,18.2188 Q806.2188,17.4375 808.0938,17.4375 Q808.9844,17.4375 809.6563,17.625 Q810.3281,17.7969 811.0156,18.1406 L810.2031,20.1563 Q809.5781,19.8438 809.0313,19.7188 Q808.5,19.5938 808.0156,19.5938 Q806.8438,19.5938 806.1406,20.125 Q805.4375,20.6563 805.1406,21.6094 Q804.8438,22.5625 804.8438,23.8281 Q804.8438,25.8438 805.5625,26.8125 Q806.2813,27.7656 807.875,27.7656 Q808.4688,27.7656 809.0938,27.6094 Q809.7188,27.4531 810.5469,27.0781 L810.5469,29.2969 Q809.8125,29.6094 809.0156,29.7656 Q808.2344,29.9219 807.4688,29.9219 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="822" y="28.432">TileType</text><line style="stroke:#181818;stroke-width:0.5;" x1="794" x2="880" y1="39" y2="39"/><ellipse cx="804" cy="54.034" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="813" y="57.9659">x : int</text><ellipse cx="804" cy="73.1019" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="813" y="77.0339">y : int</text><line style="stroke:#181818;stroke-width:0.5;" x1="794" x2="880" y1="85.1358" y2="85.1358"/></g><!--MD5=[9563755d011c5cec7ec66dc53565a59e]
+class Board--><g id="elem_Board"><rect codeLine="86" fill="#F1F1F1" height="219.6113" id="Board" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="454" x="7" y="153.14"/><ellipse cx="209.75" cy="169.14" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M209.2188,176.0619 Q207.4688,176.0619 206.3281,175.3275 Q205.2031,174.5775 204.6406,173.2338 Q204.0938,171.8744 204.0938,170.0775 Q204.0938,168.0463 204.75,166.5931 Q205.4063,165.14 206.6875,164.3588 Q207.9688,163.5775 209.8438,163.5775 Q210.7344,163.5775 211.4063,163.765 Q212.0781,163.9369 212.7656,164.2806 L211.9531,166.2963 Q211.3281,165.9838 210.7813,165.8588 Q210.25,165.7338 209.7656,165.7338 Q208.5938,165.7338 207.8906,166.265 Q207.1875,166.7963 206.8906,167.7494 Q206.5938,168.7025 206.5938,169.9681 Q206.5938,171.9838 207.3125,172.9525 Q208.0313,173.9056 209.625,173.9056 Q210.2188,173.9056 210.8438,173.7494 Q211.4688,173.5931 212.2969,173.2181 L212.2969,175.4369 Q211.5625,175.7494 210.7656,175.9056 Q209.9844,176.0619 209.2188,176.0619 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="230.25" y="174.572">Board</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="460" y1="185.14" y2="185.14"/><ellipse cx="18" cy="200.174" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="27" y="204.1059">width : int</text><ellipse cx="18" cy="219.2419" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="27" y="223.1739">height : int</text><ellipse cx="18" cy="238.3098" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="27" y="242.2418">offSet : int</text><ellipse cx="18" cy="257.3777" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="27" y="261.3097">basePieceVal : int = 10</text><ellipse cx="18" cy="276.4456" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="27" y="280.3776">refillDelay : float = 0.5f</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="460" y1="288.4796" y2="288.4796"/><ellipse cx="18" cy="303.5135" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="194" x="27" y="307.4455">GenerateBlankSpaces() : void</text><ellipse cx="18" cy="322.5815" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="208" x="27" y="326.5134">GenerateBreakableTiles() : void</text><ellipse cx="18" cy="341.6494" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="27" y="345.5814">DestroyMatches() : void</text><ellipse cx="18" cy="360.7173" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="428" x="27" y="364.6493">SwitchAndCheck(column:int, row:int, direction:Vector2Int) : bool</text></g><!--MD5=[83b3cf3d23d77c6f1e1b5291a241bc2a]
+class MonoBehaviour--><g id="elem_MonoBehaviour"><rect fill="#F1F1F1" height="48" id="MonoBehaviour" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="138" x="393" y="26.07"/><ellipse cx="408" cy="42.07" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M407.4688,48.9919 Q405.7188,48.9919 404.5781,48.2575 Q403.4531,47.5075 402.8906,46.1638 Q402.3438,44.8044 402.3438,43.0075 Q402.3438,40.9763 403,39.5231 Q403.6563,38.07 404.9375,37.2888 Q406.2188,36.5075 408.0938,36.5075 Q408.9844,36.5075 409.6563,36.695 Q410.3281,36.8669 411.0156,37.2106 L410.2031,39.2263 Q409.5781,38.9138 409.0313,38.7888 Q408.5,38.6638 408.0156,38.6638 Q406.8438,38.6638 406.1406,39.195 Q405.4375,39.7263 405.1406,40.6794 Q404.8438,41.6325 404.8438,42.8981 Q404.8438,44.9138 405.5625,45.8825 Q406.2813,46.8356 407.875,46.8356 Q408.4688,46.8356 409.0938,46.6794 Q409.7188,46.5231 410.5469,46.1481 L410.5469,48.3669 Q409.8125,48.6794 409.0156,48.8356 Q408.2344,48.9919 407.4688,48.9919 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="422" y="47.502">MonoBehaviour</text><line style="stroke:#181818;stroke-width:0.5;" x1="394" x2="530" y1="58.07" y2="58.07"/><line style="stroke:#181818;stroke-width:0.5;" x1="394" x2="530" y1="66.07" y2="66.07"/></g><!--MD5=[064f7a74fee85463ec1a30143664ee17]
+class GameObject--><g id="elem_GameObject"><rect fill="#F1F1F1" height="48" id="GameObject" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="115" x="399.5" y="943.75"/><ellipse cx="414.5" cy="959.75" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M413.9688,966.6719 Q412.2188,966.6719 411.0781,965.9375 Q409.9531,965.1875 409.3906,963.8438 Q408.8438,962.4844 408.8438,960.6875 Q408.8438,958.6563 409.5,957.2031 Q410.1563,955.75 411.4375,954.9688 Q412.7188,954.1875 414.5938,954.1875 Q415.4844,954.1875 416.1563,954.375 Q416.8281,954.5469 417.5156,954.8906 L416.7031,956.9063 Q416.0781,956.5938 415.5313,956.4688 Q415,956.3438 414.5156,956.3438 Q413.3438,956.3438 412.6406,956.875 Q411.9375,957.4063 411.6406,958.3594 Q411.3438,959.3125 411.3438,960.5781 Q411.3438,962.5938 412.0625,963.5625 Q412.7813,964.5156 414.375,964.5156 Q414.9688,964.5156 415.5938,964.3594 Q416.2188,964.2031 417.0469,963.8281 L417.0469,966.0469 Q416.3125,966.3594 415.5156,966.5156 Q414.7344,966.6719 413.9688,966.6719 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="428.5" y="965.182">GameObject</text><line style="stroke:#181818;stroke-width:0.5;" x1="400.5" x2="513.5" y1="975.75" y2="975.75"/><line style="stroke:#181818;stroke-width:0.5;" x1="400.5" x2="513.5" y1="983.75" y2="983.75"/></g><!--MD5=[dd8a4c39a55de402715073e2862d1c2e]
+class Dot--><g id="elem_Dot"><rect codeLine="104" fill="#F1F1F1" height="391.2225" id="Dot" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="224" x="345" y="452.75"/><ellipse cx="441.25" cy="468.75" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M440.7188,475.6719 Q438.9688,475.6719 437.8281,474.9375 Q436.7031,474.1875 436.1406,472.8438 Q435.5938,471.4844 435.5938,469.6875 Q435.5938,467.6563 436.25,466.2031 Q436.9063,464.75 438.1875,463.9688 Q439.4688,463.1875 441.3438,463.1875 Q442.2344,463.1875 442.9063,463.375 Q443.5781,463.5469 444.2656,463.8906 L443.4531,465.9063 Q442.8281,465.5938 442.2813,465.4688 Q441.75,465.3438 441.2656,465.3438 Q440.0938,465.3438 439.3906,465.875 Q438.6875,466.4063 438.3906,467.3594 Q438.0938,468.3125 438.0938,469.5781 Q438.0938,471.5938 438.8125,472.5625 Q439.5313,473.5156 441.125,473.5156 Q441.7188,473.5156 442.3438,473.3594 Q442.9688,473.2031 443.7969,472.8281 L443.7969,475.0469 Q443.0625,475.3594 442.2656,475.5156 Q441.4844,475.6719 440.7188,475.6719 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="23" x="461.75" y="474.182">Dot</text><line style="stroke:#181818;stroke-width:0.5;" x1="346" x2="568" y1="484.75" y2="484.75"/><ellipse cx="356" cy="499.784" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="365" y="503.7159">column : int</text><ellipse cx="356" cy="518.8519" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="365" y="522.7839">row : int</text><ellipse cx="356" cy="537.9198" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="365" y="541.8518">previousColumn : int</text><ellipse cx="356" cy="556.9877" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="365" y="560.9197">previousRow : int</text><ellipse cx="356" cy="576.0556" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="365" y="579.9876">targetX : int</text><ellipse cx="356" cy="595.1235" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="365" y="599.0555">targetY : int</text><ellipse cx="356" cy="614.1915" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="365" y="618.1234">isMatched : bool = false</text><ellipse cx="356" cy="633.2594" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144" x="365" y="637.1914">swipeAngle : float = 0</text><ellipse cx="356" cy="652.3273" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="365" y="656.2593">swipeResist : float = 1f</text><ellipse cx="356" cy="671.3952" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="365" y="675.3272">isColorBomb : bool</text><ellipse cx="356" cy="690.4631" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="365" y="694.3951">isColumnBomb : bool</text><ellipse cx="356" cy="709.531" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="365" y="713.463">isRowBomb : bool</text><ellipse cx="356" cy="728.599" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="365" y="732.5309">isAdjacentBomb : bool</text><line style="stroke:#181818;stroke-width:0.5;" x1="346" x2="568" y1="740.6329" y2="740.6329"/><ellipse cx="356" cy="755.6669" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="365" y="759.5989">CheckMoveCo() : IEnumerator</text><ellipse cx="356" cy="774.7348" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="365" y="778.6668">MakeRowBomb() : void</text><ellipse cx="356" cy="793.8027" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="365" y="797.7347">MakeColumnBomb() : void</text><ellipse cx="356" cy="812.8706" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="365" y="816.8026">MakeColorBomb() : void</text><ellipse cx="356" cy="831.9385" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="365" y="835.8705">MakeAdjacentBomb() : void</text></g><!--MD5=[5445b9eed04bff0efa05dfb87ca2525b]
+link TileType to TileKind--><g id="link_TileType_TileKind"><path codeLine="97" d="M837,93.49 C837,125.31 837,169.21 837,204.23 " fill="none" id="TileType-to-TileKind" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="837,209.14,841,200.14,837,204.14,833,200.14,837,209.14" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="788.6953" y="198.6554">tileKind</text></g><!--MD5=[6bab5da86d9a5c61d1aca95883c28654]
+reverse link MonoBehaviour to Board--><g id="link_MonoBehaviour_Board"><path codeLine="98" d="M421.21,88.79 C401.59,106.94 376.95,129.73 352.06,152.75 " fill="none" id="MonoBehaviour-backto-Board" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="416.18,83.91,435.62,75.47,425.69,94.19,416.18,83.91" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[efd231c5b26e00db8a3ff228451e80c1]
+link Board to GameState--><g id="link_Board_GameState"><path codeLine="99" d="M464.37,262.94 C464.37,262.94 494.78,262.94 509.34,262.94 " fill="none" id="Board-GameState" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="519.11,262.94,510.11,258.94,514.11,262.94,510.11,266.94,519.11,262.94" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="514.11" x2="506.11" y1="262.94" y2="262.94"/><polygon fill="none" points="464.37,262.94,461.7953,269.6758,467.0227,274.6431,469.5974,267.9073,464.37,262.94" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="75" x="469.6027" y="281.8253">currentState</text></g><!--MD5=[421127b5e58a0c55cbe16791a2b21793]
+link Board to GameObject--><g id="link_Board_GameObject"><path codeLine="100" d="M195.45,373.14 C175.21,500.52 175.93,712.87 268,863.75 C294.94,907.89 348.78,937.22 393.78,952.92 " fill="none" id="Board-to-GameObject" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="398.36,954.47,391.1169,947.7964,393.6238,952.8674,388.5527,955.3743,398.36,954.47" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="334.6208" y="949.8615">tilePrefab</text></g><!--MD5=[421127b5e58a0c55cbe16791a2b21793]
+link Board to GameObject--><g id="link_Board_GameObject"><path codeLine="101" d="M220.45,373.14 C210.21,500.52 210.93,712.87 303,863.75 C324.22,898.53 362.15,924.11 395.05,941.08 " fill="none" id="Board-to-GameObject-1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="399.36,943.25,393.138,935.6154,394.8994,940.9911,389.5237,942.7525,399.36,943.25" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="118" x="273.5228" y="938.2904">breakableTilePrefab</text></g><!--MD5=[421127b5e58a0c55cbe16791a2b21793]
+link Board to GameObject--><g id="link_Board_GameObject"><path codeLine="102" d="M245.45,373.14 C245.21,500.52 245.93,712.87 338,863.75 C359.05,898.24 396.52,923.69 425.1,940.65 " fill="none" id="Board-to-GameObject-2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="429.38,943.17,423.6576,935.1541,425.0725,940.6312,419.5955,942.0461,429.38,943.17" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="79" x="434.3997" y="931.8491">destroyEffect</text></g><!--MD5=[28b0e7fb8eb876739ce9b398bd008fb1]
+link Board to Dot--><g id="link_Board_Dot"><path codeLine="103" d="M297.46,373.02 C311.4,396.98 326.58,423.08 341.86,449.33 " fill="none" id="Board-to-Dot" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="344.35,453.63,343.2743,443.8401,341.8324,449.3101,336.3624,447.8682,344.35,453.63" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="271.1969" y="440.8137">currentDot</text></g><!--MD5=[44313e97516be8a09e08c2c42776a7dc]
+reverse link MonoBehaviour to Dot--><g id="link_MonoBehaviour_Dot"><path codeLine="124" d="M551.53,72.08 C594.31,87.1 641.63,112.16 667,153.14 C718.38,236.12 698.31,280.3 667,372.75 C646.79,432.42 607.83,489.33 568.9,535.69 " fill="none" id="MonoBehaviour-backto-Dot" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="549.66,78.83,532.76,66.04,553.95,65.5,549.66,78.83" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[31f3b28f13d91156794433424a65a0cc]
+link Dot to GameObject--><g id="link_Dot_GameObject"><path codeLine="125" d="M405.69,843.54 C408.22,880.81 414.78,915.32 425.39,938.28 " fill="none" id="Dot-to-GameObject" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="427.49,942.5,427.0554,932.6607,425.2597,938.025,419.8954,936.2293,427.49,942.5" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="425.8425" y="931.4423">otherDot</text></g><!--MD5=[31f3b28f13d91156794433424a65a0cc]
+link Dot to GameObject--><g id="link_Dot_GameObject"><path codeLine="126" d="M431.34,843.54 C432.6,880.49 435.84,914.73 441.06,937.69 " fill="none" id="Dot-to-GameObject-1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="442.22,942.39,443.9446,932.6933,441.0208,937.5359,436.1781,934.6121,442.22,942.39" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="94" x="451.7431" y="931.7466">adjacentMarker</text></g><!--MD5=[31f3b28f13d91156794433424a65a0cc]
+link Dot to GameObject--><g id="link_Dot_GameObject"><path codeLine="127" d="M457,843.54 C457,880.33 457,914.44 457,937.4 " fill="none" id="Dot-to-GameObject-2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="457,942.35,461,933.35,457,937.35,453,933.35,457,942.35" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="508.625" y="931.4423">rowArrow</text></g><!--MD5=[31f3b28f13d91156794433424a65a0cc]
+link Dot to GameObject--><g id="link_Dot_GameObject"><path codeLine="128" d="M482.66,843.54 C481.4,880.49 478.16,914.73 472.94,937.69 " fill="none" id="Dot-to-GameObject-3" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="471.78,942.39,477.8219,934.6121,472.9792,937.5359,470.0554,932.6933,471.78,942.39" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81" x="486.8663" y="931.7466">columnArrow</text></g><!--MD5=[31f3b28f13d91156794433424a65a0cc]
+link Dot to GameObject--><g id="link_Dot_GameObject"><path codeLine="129" d="M508.31,843.54 C505.78,880.81 499.22,915.32 488.61,938.28 " fill="none" id="Dot-to-GameObject-4" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="486.51,942.5,494.1046,936.2293,488.7403,938.025,486.9446,932.6607,486.51,942.5" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="522.1551" y="948.9228">colorBomb</text></g><!--MD5=[b7f1d76995fa297816c19309ae70556f]
+@startuml
+left to right direction
+class Backgroundtile {
+    + hitPoints : int
+    + TakeDamage(damage:int) : void
+}
+MonoBehaviour <|- - Backgroundtile
+Backgroundtile - -> "breakSprite" Sprite
+class CameraScalar {
+    + cameraOffset : float
+    + padding : float = 2
+    + yOffset : float = 1
+}
+MonoBehaviour <|- - CameraScalar
+class FadePanelController {
+    + OK() : void
+}
+MonoBehaviour <|- - FadePanelController
+FadePanelController - -> "panelAnim" Animator
+FadePanelController - -> "gameInfoAnim" Animator
+class FindMatches {
+    + FindAllMatches() : void
+    + MatchPiecesOfColor(color:string) : void
+    + CheckBombs() : void
+}
+class "List`1"<T> {
+}
+MonoBehaviour <|- - FindMatches
+FindMatches o-> "currentMatches<GameObject>" "List`1"
+class BlankGoal {
+    + numberNeeded : int
+    + numberCollected : int
+    + matchValue : string
+}
+class GoalManager {
+}
+BlankGoal - -> "goalSprite" Sprite
+MonoBehaviour <|- - GoalManager
+GoalManager - -> "goalPrefab" GameObject
+GoalManager - -> "goalIntroParent" GameObject
+GoalManager - -> "goalGameParent" GameObject
+class GoalPanel {
+    + thisString : string
+}
+MonoBehaviour <|- - GoalPanel
+GoalPanel - -> "thisImage" Image
+GoalPanel - -> "thisSprite" Sprite
+GoalPanel - -> "thisText" TextMeshProUGUI
+class HintManager {
+    + hintDelay : float
+    + DestroyHint() : void
+}
+MonoBehaviour <|- - HintManager
+HintManager - -> "hintParticle" GameObject
+HintManager - -> "currentHint" GameObject
+class ScoreManager {
+    + score : int
+    + IncreaseScore(amountToIncrease:int) : void
+}
+MonoBehaviour <|- - ScoreManager
+ScoreManager - -> "scoreText" TextMeshProUGUI
+ScoreManager - -> "scoreBar" Image
+class SoundManager {
+    + Start() : void
+    + Update() : void
+    + PlayRandomDestroyNoise() : void
+}
+MonoBehaviour <|- - SoundManager
+SoundManager - -> "backgroundMusic" AudioSource
+SoundManager - -> "introSection" AudioSource
+
+newpage
+top to bottom direction
+enum GameState {
+    wait,
+    move,
+}
+enum TileKind {
+    Breakable,
+    Blank,
+    Normal,
+}
+class TileType {
+    + x : int
+    + y : int
+}
+class Board {
+    + width : int
+    + height : int
+    + offSet : int
+    + basePieceVal : int = 10
+    + refillDelay : float = 0.5f
+    + GenerateBlankSpaces() : void
+    + GenerateBreakableTiles() : void
+    + DestroyMatches() : void
+    + SwitchAndCheck(column:int, row:int, direction:Vector2Int) : bool
+}
+TileType - -> "tileKind" TileKind
+MonoBehaviour <|- - Board
+Board o-> "currentState" GameState
+Board - -> "tilePrefab" GameObject
+Board - -> "breakableTilePrefab" GameObject
+Board - -> "destroyEffect" GameObject
+Board - -> "currentDot" Dot
+class Dot {
+    + column : int
+    + row : int
+    + previousColumn : int
+    + previousRow : int
+    + targetX : int
+    + targetY : int
+    + isMatched : bool = false
+    + swipeAngle : float = 0
+    + swipeResist : float = 1f
+    + isColorBomb : bool
+    + isColumnBomb : bool
+    + isRowBomb : bool
+    + isAdjacentBomb : bool
+    + CheckMoveCo() : IEnumerator
+    + MakeRowBomb() : void
+    + MakeColumnBomb() : void
+    + MakeColorBomb() : void
+    + MakeAdjacentBomb() : void
+}
+MonoBehaviour <|- - Dot
+Dot - -> "otherDot" GameObject
+Dot - -> "adjacentMarker" GameObject
+Dot - -> "rowArrow" GameObject
+Dot - -> "columnArrow" GameObject
+Dot - -> "colorBomb" GameObject
+@enduml
+
+PlantUML version 1.2022.7(Tue Aug 23 00:01:30 ICT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

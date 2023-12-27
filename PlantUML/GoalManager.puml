@@ -1,0 +1,14 @@
+@startuml
+class BlankGoal {
+    + numberNeeded : int
+    + numberCollected : int
+    + matchValue : string
+}
+class GoalManager {
+}
+BlankGoal --> "goalSprite" Sprite
+MonoBehaviour <|-- GoalManager
+GoalManager --> "goalPrefab" GameObject
+GoalManager --> "goalIntroParent" GameObject
+GoalManager --> "goalGameParent" GameObject
+@enduml

@@ -1,0 +1,33 @@
+@startuml
+enum GameState {
+    wait,
+    move,
+}
+enum TileKind {
+    Breakable,
+    Blank,
+    Normal,
+}
+class TileType {
+    + x : int
+    + y : int
+}
+class Board {
+    + width : int
+    + height : int
+    + offSet : int
+    + basePieceVal : int = 10
+    + refillDelay : float = 0.5f
+    + GenerateBlankSpaces() : void
+    + GenerateBreakableTiles() : void
+    + DestroyMatches() : void
+    + SwitchAndCheck(column:int, row:int, direction:Vector2Int) : bool
+}
+TileType --> "tileKind" TileKind
+MonoBehaviour <|-- Board
+Board o-> "currentState" GameState
+Board --> "tilePrefab" GameObject
+Board --> "breakableTilePrefab" GameObject
+Board --> "destroyEffect" GameObject
+Board --> "currentDot" Dot
+@enduml

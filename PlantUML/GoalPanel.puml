@@ -1,0 +1,9 @@
+@startuml
+class GoalPanel {
+    + thisString : string
+}
+MonoBehaviour <|-- GoalPanel
+GoalPanel --> "thisImage" Image
+GoalPanel --> "thisSprite" Sprite
+GoalPanel --> "thisText" TextMeshProUGUI
+@enduml

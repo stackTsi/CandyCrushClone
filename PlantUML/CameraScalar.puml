@@ -1,0 +1,8 @@
+@startuml
+class CameraScalar {
+    + cameraOffset : float
+    + padding : float = 2
+    + yOffset : float = 1
+}
+MonoBehaviour <|-- CameraScalar
+@enduml

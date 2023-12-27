@@ -1,0 +1,9 @@
+@startuml
+class HintManager {
+    + hintDelay : float
+    + DestroyHint() : void
+}
+MonoBehaviour <|-- HintManager
+HintManager --> "hintParticle" GameObject
+HintManager --> "currentHint" GameObject
+@enduml

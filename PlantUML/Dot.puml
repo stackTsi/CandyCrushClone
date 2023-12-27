@@ -1,0 +1,28 @@
+@startuml
+class Dot {
+    + column : int
+    + row : int
+    + previousColumn : int
+    + previousRow : int
+    + targetX : int
+    + targetY : int
+    + isMatched : bool = false
+    + swipeAngle : float = 0
+    + swipeResist : float = 1f
+    + isColorBomb : bool
+    + isColumnBomb : bool
+    + isRowBomb : bool
+    + isAdjacentBomb : bool
+    + CheckMoveCo() : IEnumerator
+    + MakeRowBomb() : void
+    + MakeColumnBomb() : void
+    + MakeColorBomb() : void
+    + MakeAdjacentBomb() : void
+}
+MonoBehaviour <|-- Dot
+Dot --> "otherDot" GameObject
+Dot --> "adjacentMarker" GameObject
+Dot --> "rowArrow" GameObject
+Dot --> "columnArrow" GameObject
+Dot --> "colorBomb" GameObject
+@enduml
