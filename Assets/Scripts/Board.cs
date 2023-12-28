@@ -40,6 +40,7 @@ public class Board : MonoBehaviour
     private FindMatches findMatches;
     private ScoreManager scoreManager;
     private SoundManager soundManager;
+    private GoalManager goalManager;
     public int basePieceVal = 10;
     private int streakValue = 1;
     public float refillDelay = 0.5f;
@@ -47,6 +48,7 @@ public class Board : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        goalManager = FindObjectOfType<GoalManager>();
         soundManager = FindObjectOfType<SoundManager>();
         scoreManager = FindObjectOfType<ScoreManager>();
         breakableTiles = new Backgroundtile[width, height];
@@ -279,7 +281,14 @@ public class Board : MonoBehaviour
                     breakableTiles[column, row] = null;
                 }
             }
-            //sound manager null check
+            //goal manager null check and call
+            if (goalManager != null)
+            {
+                goalManager.CompareGoal(allDots[column, row].tag.ToString());
+                goalManager.UpdateGoals();
+            }
+
+            //sound manager null check and call
             if (soundManager != null)
             {
                 soundManager.PlayRandomDestroyNoise();

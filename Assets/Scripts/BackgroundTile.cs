@@ -8,15 +8,22 @@ public class Backgroundtile : MonoBehaviour
     public int hitPoints;
     private SpriteRenderer spriteRenderer;
     public Sprite breakSprite;
+    private GoalManager goalManager;
 
     private void Start()
     {
+        goalManager = FindObjectOfType<GoalManager>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
     private void Update()
     {
         if (hitPoints <= 0)
-        {
+        {   
+            //for adding the goal values if there is a quota for it
+            if(goalManager != null){
+                goalManager.CompareGoal(this.gameObject.tag);
+                goalManager.UpdateGoals();
+            }
             Destroy(this.gameObject);
         }
     }
