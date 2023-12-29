@@ -84,7 +84,7 @@ MonoBehaviour:
   scoreGoals: f40100008403000040060000
   endGameRequirements:
     gameType: 0
-    counterValue: 24
+    counterValue: 32
   levelGoals:
   - numberNeeded: 6
     numberCollected: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
     numberCollected: 0
     goalSprite: {fileID: 21300000, guid: 8635484aacdf8b44ca5854d67b46281a, type: 3}
     matchValue: Mint Dot
-  - numberNeeded: 5
+  - numberNeeded: 4
     numberCollected: 0
     goalSprite: {fileID: 21300000, guid: a37c0cbe8da77c64f9d8c64ea70039ef, type: 3}
-    matchValue: Breakable Tile
+    matchValue: Breakable
