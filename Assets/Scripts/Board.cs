@@ -27,14 +27,23 @@ public class TileType
 }
 public class Board : MonoBehaviour
 {
+    [Header("Scriptable Object Section")]
+    public World world;
+    public int level;
+
     public GameState currentState = GameState.move;
+    [Header("Board Dimensions")]
     public int width;
     public int height;
     public int offSet;
+
+    [Header("Prefabs")]
     public GameObject tilePrefab;
     public GameObject breakableTilePrefab;
     public GameObject[] dots;
     public GameObject destroyEffect;
+
+    [Header("Layout")]
     public TileType[] boardLayout;
     private bool[,] blankSpaces;
     private Backgroundtile[,] breakableTiles;
@@ -48,6 +57,24 @@ public class Board : MonoBehaviour
     private int streakValue = 1;
     public float refillDelay = 0.5f;
     public int[] scoreGoals;
+
+    private void Awake()
+    {
+        if (world != null)
+        {
+            if (level < world.levels.Length)
+            {
+                if (world.levels[level] != null)
+                {
+                    width = world.levels[level].width;
+                    height = world.levels[level].height;
+                    dots = world.levels[level].dots;
+                    scoreGoals = world.levels[level].scoreGoals;
+                    boardLayout = world.levels[level].boardLayout;
+                }
+            }
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -473,7 +500,7 @@ public class Board : MonoBehaviour
                     if (ii < height - 2)
                     {
                         //check if the dots above(or below) exist
-                        if (allDots[i, ii + 1] != null &&  !blankSpaces[i,ii+1] && allDots[i, ii + 2] != null && !blankSpaces[i,ii+2])
+                        if (allDots[i, ii + 1] != null && !blankSpaces[i, ii + 1] && allDots[i, ii + 2] != null && !blankSpaces[i, ii + 2])
                         {
                             if (allDots[i, ii + 1].tag == allDots[i, ii].tag
                             && allDots[i, ii + 2].tag == allDots[i, ii].tag)

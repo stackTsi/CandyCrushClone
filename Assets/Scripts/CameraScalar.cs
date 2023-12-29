@@ -7,7 +7,7 @@ public class CameraScalar : MonoBehaviour
 {
     private Board board;
     public float cameraOffset;
-    public float padding = 2;
+    public float padding = 1;
     public float yOffset = 1;
     // Start is called before the first frame update
     void Start()
@@ -27,7 +27,7 @@ public class CameraScalar : MonoBehaviour
 
         if (board.width >= board.height)
         {
-            Camera.main.orthographicSize = board.width / 2 + padding;
+            Camera.main.orthographicSize = (board.width / 2) + padding / Camera.main.aspect;
         }
         else
         {

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 583a55a063716c2499983daefb713c7e, type: 3}
+  m_Name: Level 1
+  m_EditorClassIdentifier: 
+  width: 7
+  height: 7
+  boardLayout: []
+  dots:
+  - {fileID: 3023756277753508249, guid: 752574b3ee5f78b4ab84e54cb8f75777, type: 3}
+  - {fileID: 6231776090092991917, guid: 75efe5d0fcd947e44a23c8dccf75abc1, type: 3}
+  - {fileID: 6102361926382067995, guid: 96f26b9f9e1e4cf43bfc026723694f21, type: 3}
+  - {fileID: 3239910965162071206, guid: 3b593e9fb674c224d8faa2bc33c9240b, type: 3}
+  - {fileID: 4190430540561532507, guid: 0b85620970eec274ea6e3f942fd648da, type: 3}
+  scoreGoals: c8000000c2010000bc020000
+  endGameRequirements:
+    gameType: 0
+    counterValue: 15
+  levelGoals:
+  - numberNeeded: 10
+    numberCollected: 0
+    goalSprite: {fileID: 21300000, guid: 4d248c5fac8cc5e408298606e32de146, type: 3}
+    matchValue: Red Dot
+  - numberNeeded: 10
+    numberCollected: 0
+    goalSprite: {fileID: 21300000, guid: 9a7d314bf43f15c44ba1a19b5f56f97d, type: 3}
+    matchValue: Teal Dot
