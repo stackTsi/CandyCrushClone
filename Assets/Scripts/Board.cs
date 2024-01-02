@@ -172,6 +172,15 @@ public class Board : MonoBehaviour
                     return true;
                 }
             }
+
+            //Experimental : diagonal match checker for board initialization
+            if (allDots[column - 1, row - 1] != null & allDots[column - 2, row - 2] != null)
+            {
+                if (allDots[column - 1, row - 1].tag == piece.tag && allDots[column - 2, row - 2].tag == piece.tag)
+                {
+                    return true;
+                }
+            }
         }
         else if (column <= 1 || row <= 1)
         {

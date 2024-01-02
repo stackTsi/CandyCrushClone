@@ -3760,7 +3760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   world: {fileID: 11400000, guid: 0348c5aa1f5d0b044ae40e62fa475be1, type: 2}
-  level: 2
+  level: 0
   currentState: 1
   width: 7
   height: 10

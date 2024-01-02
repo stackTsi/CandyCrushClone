@@ -86,57 +86,53 @@ public class FindMatches : MonoBehaviour
         AddToListAndMatch(dot2);
         AddToListAndMatch(dot3);
     }
-    private IEnumerator FindAllMatchesCo()
-    {
-        yield return new WaitForSeconds(.2f);
-        for (int i = 0; i < board.width; i++)
-        {
-            for (int j = 0; j < board.height; j++)
-            {
-                GameObject currentDot = board.allDots[i, j];
-                if (currentDot != null)
-                {
-                    Dot currentDotDot = currentDot.GetComponent<Dot>();
-                    if (i > 0 && i < board.width - 1)
-                    {
-                        GameObject leftDot = board.allDots[i - 1, j];
-                        GameObject rightDot = board.allDots[i + 1, j];
-                        if (leftDot != null && rightDot != null)
-                        {
-                            Dot leftDotDot = leftDot.GetComponent<Dot>();
-                            Dot rightDotDot = rightDot.GetComponent<Dot>();
-                            if (leftDot.tag == currentDot.tag && rightDot.tag == currentDot.tag)
-                            {
-                                MatchRowBomb(leftDotDot, currentDotDot, rightDotDot);
-                                MatchColumnBomb(leftDotDot, currentDotDot, rightDotDot);
-                                MatchAdjacentBomb(leftDotDot, currentDotDot, rightDotDot);
-                                MatchNearbyPieces(leftDot, currentDot, rightDot);
-                            }
-                        }
-                    }
+private IEnumerator FindAllMatchesCo()
+{
+    yield return new WaitForSeconds(.2f);
 
-                    if (j > 0 && j < board.height - 1)
-                    {
-                        GameObject upDot = board.allDots[i, j + 1];
-                        GameObject downDot = board.allDots[i, j - 1];
-                        if (upDot != null && downDot != null)
-                        {
-                            Dot upDotDot = upDot.GetComponent<Dot>();
-                            Dot downDotDot = downDot.GetComponent<Dot>();
-                            if (upDot.tag == currentDot.tag && downDot.tag == currentDot.tag)
-                            {
-                                MatchColumnBomb(upDotDot, currentDotDot, downDotDot);
-                                MatchRowBomb(upDotDot, currentDotDot, downDotDot);
-                                MatchAdjacentBomb(upDotDot, currentDotDot, downDotDot);
-                                MatchNearbyPieces(upDot, currentDot, downDot);
-                            }
-                        }
-                    }
-                }
+    for (int i = 0; i < board.width; i++)
+    {
+        for (int j = 0; j < board.height; j++)
+        {
+            GameObject currentDot = board.allDots[i, j];
+            if (currentDot != null)
+            {
+                Dot currentDotDot = currentDot.GetComponent<Dot>();
+
+                CheckMatches(currentDotDot,currentDot, i - 1, j, i + 1, j); // check for horizontal matches
+                CheckMatches(currentDotDot,currentDot, i, j - 1, i, j + 1); // check for vertical matches
+                //diagonal
+                CheckMatches(currentDotDot,currentDot, i - 1, j - 1, i + 1, j + 1); // check for bottom right to top left
+                CheckMatches(currentDotDot,currentDot, i + 1, j - 1, i - 1, j + 1); // check for bottom left to top right
 
             }
         }
     }
+}
+
+private void CheckMatches(Dot currentDotDot,GameObject currentDot, int x1, int y1, int x2, int y2)
+{
+    if (x1 >= 0 && x1 < board.width && y1 >= 0 && y1 < board.height &&
+        x2 >= 0 && x2 < board.width && y2 >= 0 && y2 < board.height)
+    {
+        GameObject firstMatch = board.allDots[x1, y1];
+        GameObject secondMatch = board.allDots[x2, y2];
+
+        if (firstMatch != null && secondMatch != null)
+        {
+            Dot firstMatchDot = firstMatch.GetComponent<Dot>();
+            Dot secondMatchDot = secondMatch.GetComponent<Dot>();
+
+            if (firstMatch.tag == currentDotDot.tag && secondMatch.tag == currentDotDot.tag)
+            {
+                MatchRowBomb(firstMatchDot, currentDotDot, secondMatchDot);
+                MatchColumnBomb(firstMatchDot, currentDotDot, secondMatchDot);
+                MatchAdjacentBomb(firstMatchDot, currentDotDot, secondMatchDot);
+                MatchNearbyPieces(firstMatch, currentDot, secondMatch);
+            }
+        }
+    }
+}
 
     public void MatchPiecesOfColor(string color)
     {
