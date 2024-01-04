@@ -12,4 +12,20 @@ Welcome to our exciting project, where we aim to develop a captivating match-thr
 2. Open the project in Unity.
 3. Make sure you have the necessary packages installed.
 
-Writing a good README improves project discoverability, user engagement, and issue management. Thank you for your interest in our project!
+## Link:
+1. Go to the Unity download page.
+2. # Unity: https://unity.com/download
+3. Click on "Download for Windows" or "Download for Mac" based on your operating system.
+4. Follow the instructions onscreen for guidance through the installation process and setup.
+5. Install the latest version of Unity, an older release, or a beta featuring the latest in-development features.
+## Adding a Project to Unity
+1. Launch the Unity Hub.
+2. Click on "Project" > "Open".
+3. Locate the project you need to add from saved location on your machine using the file explorer and click "Open".
+4. The project immediately opens in the Editor and is added to the Hub.
+5. Please note that you must have a Unity ID account to use the Unity Editor If you do not have an account, you can create one at id.unity.com. After creating a Unity ID account, you can follow the above steps to download and install the Unity Hub and Editor.
+
+# Youtube instructions video:
+
+
+Thank you for your interest in our project!
