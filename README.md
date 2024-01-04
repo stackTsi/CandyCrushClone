@@ -26,6 +26,6 @@ Welcome to our exciting project, where we aim to develop a captivating match-thr
 5. Please note that you must have a Unity ID account to use the Unity Editor If you do not have an account, you can create one at id.unity.com. After creating a Unity ID account, you can follow the above steps to download and install the Unity Hub and Editor.
 
 # Youtube instructions video:
-
+https://youtu.be/HIIdsO7h2-g
 
 Thank you for your interest in our project!
