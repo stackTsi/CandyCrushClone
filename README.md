@@ -28,4 +28,6 @@ Welcome to our exciting project, where we aim to develop a captivating match-thr
 # Youtube instructions video:
 https://youtu.be/HIIdsO7h2-g
 
+# Important: Selecting scene for gameplay at 4:40
+
 Thank you for your interest in our project!
